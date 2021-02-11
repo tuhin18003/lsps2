@@ -1,0 +1,410 @@
+{{ define "main" }}
+
+{{- partial "header.html" . -}}
+
+{{ "<!-- main service -->" | safeHTML }}
+<section>
+  <div class="container-fluid px-0">
+    <div class="row no-gutters">
+      {{ range .Site.Data.homepage.serviceItem }}
+      {{ "<!-- service item -->" | safeHTML }}
+      <div class="col-lg-3 col-sm-6">
+        <div class="main-service-item">
+          <img class="img-fluid w-100" src="{{ .image | absURL }}" onerror="this.src='{{ .imageAlt | absURL }}'" alt="{{ .altText }}">
+          <h3 class="text-white main-service-title">{{ .title }}</h3>
+          <div class="main-service-content">
+            <span class="bg-letter text-uppercase">{{ .bgLetter }}</span>
+            <p class="text-white mb-4">{{ .content }}</p>
+            <a href="{{ .URL }}" class="btn btn-light">{{ .btnText }}</a>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ "<!-- /main service -->" | safeHTML }}
+
+{{ "<!-- quality consult -->" | safeHTML }}
+<section class="section-sm partner-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-xl-5">
+        <div class="pr-lg-5 border-dashed-right border-md-0">
+          {{ with .Site.Params.consult }}
+          <h2 class="section-title text-white">{{ .title }}</h2>
+          <p>{{ .description | safeHTML }}</p>
+          {{ end }}
+        </div>
+      </div>
+      <div class="col-lg-6 ml-auto">
+        <form class="row" name="LSPS Consultation" method="POST" netlify-honeypot="bot-field" data-netlify="true" action="{{ .Site.Params.consult.formAction }}">
+          <div class="col-sm-6">
+            <input type="text" name="name" id="name" class="form-control mb-3" placeholder="Your name*" required>
+          </div>
+          <div class="col-sm-6">
+            <input type="email" name="email" id="email" class="form-control mb-3" placeholder="Your email*" required>
+          </div>
+          <div class="col-sm-6">
+            <input type="tel" name="phone" id="phone" class="form-control mb-3" placeholder="Phone number*" required>
+            <label style="display:none !important">Don’t fill this out if you're human: <input name="bot-field" /></label>
+          </div>
+          <div class="col-sm-6">
+            <select class="form-control mb-3" name="type" id="type">
+              <option selected disabled>Service type*</option>
+              {{ range .Site.Params.consult.serviceType }}
+              <option value="{{ .name | lower | urlize }}" name="{{ .name | lower | urlize }}">{{ .name }}</option>
+              {{ end }}
+            </select>
+          </div>
+          <div class="col-sm-6">
+            <textarea name="message" id="message" class="form-control form-control-sm mb-3 mb-sm-0" placeholder="Type your message*" required></textarea>
+          </div>
+          <div class="col-sm-6 align-self-end">
+            <button class="btn btn-primary btn-responsive" type="submit" value="send">Request A Consultation</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /quality consult -->" | safeHTML }}
+
+{{ "<!-- cosmetic surgery -->" | safeHTML }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="{{ .Site.Data.homepage.cosmeticSurgery.image | absURL }}" onerror="this.src='{{ .Site.Data.homepage.cosmeticSurgery.imageAlt | absURL }}'" alt="{{ .Site.Data.homepage.cosmeticSurgery.altText }}" class="img-fluid">
+      </div>
+      <div class="col-md-6 align-self-center">
+        {{ with .Site.Data.homepage.cosmeticSurgery }}
+        <h2 class="section-title">{{ .title }}</h2>
+        <p class="mb-5">{{ .content | safeHTML }}</p>
+        {{ end }}
+        <a href="{{ with .Site.Data.homepage.cosmeticSurgery.URL | absURL }}{{ . }}{{ end }}" class="btn btn-primary">{{ with .Site.Data.homepage.cosmeticSurgery.btnText }}{{ . }}{{ end }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /cosmetic surgery -->" | safeHTML }}
+
+
+{{ "<!-- breast implants -->" | safeHTML }}
+<section class="bg-secondary pt-5 breast-implants">
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="col-md-7 align-self-center">
+        {{ with .Site.Data.homepage.breastImplants }}
+        <h2 class="text-white section-title">{{ .title | safeHTML }}</h2>
+        <p class="text-light border-bottom border-secondary pb-4 mb-4">{{ .description | safeHTML }}</p>
+        {{ end }}
+        <div class="d-flex justify-content-between pb-4">
+          {{ range .Site.Data.homepage.breastImplants.list }}
+          <div class="text-white h5 pr-2"><a href="{{ .URL }}" >{{ .listItem | safeHTML }}</a></div>
+          {{ end }}
+        </div>
+      </div>
+      <div class="col-md-5 align-self-end">
+        <img class="img-fluid" src="{{ .Site.Data.homepage.breastImplants.image | absURL }}" onerror="this.src='{{ .Site.Data.homepage.breastImplants.imageAlt | absURL }}'" alt="{{ .Site.Data.homepage.breastImplants.altText }}">
+      </div>
+      <div class="col-12">
+        
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /breast implants -->" | safeHTML }}
+
+{{ "<!--breast block -->" | safeHTML }}
+<section class="section bg-gray pb-0 mb-100">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+      {{ with .Site.Data.homepage.breastblock }}
+        <h2 class="text-primary mb-1">{{ .title | safeHTML }}</h2>
+        <h3 class="section-title">{{ .designation | safeHTML }}</h3>
+        <p class="mb-lg-5 mb-lg-3">
+        <img class="img-fluid" src="images/homepage/breast-implants-chicago.webp" onerror="this.src='images/homepage/breast-implants-chicago.jpg'"alt="breast surgery chicago" style="float:left;">
+        {{ .content | safeHTML }}</p>
+        {{ with .button }}
+        <a href="{{ .URL }}" class="btn btn-primary mb-3">{{ .btnText }}</a>
+        {{ end }}
+        {{ end }}
+      {{ "<!--breast advantage list -->" | safeHTML }}
+      <div class="col-12">
+        <div class="bg-secondary treatment-block">
+          <h2 class="section-title text-white">{{ with .Site.Data.homepage.breastadvantage.title }}{{ . | safeHTML }} {{end }}</h2>
+          <ul class="list-inline list-styled style-white">
+            {{ range .Site.Data.homepage.breastadvantage.list }}
+            <li class="list-inline-item mb-3"><a class="text-white" href="{{ .URL }}">{{ .listItem }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ "<!-- our patients -->" | safeHTML }}
+<section class="section pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        {{ with .Site.Data.homepage.model }}
+        <h2 class="section-title">{{ .title }}</h2>
+        <p class="mb-5">{{ .description }}</p>
+        {{ end }}
+      </div>
+      {{ $.Scratch.Set "counter" 0 }}
+      {{ $section := "caseStudy" }}
+      {{ range first 4 (where .Site.RegularPages.ByDate "Type" $section ) }}
+      {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+      {{ "<!-- model item -->" | safeHTML }}
+        <div class="col-lg-3 col-6 mb-5">
+          <div class="model text-center">
+            <div class="model-img mb-4 position-relative shadow">
+              <img class="img-fluid w-100" src="{{ .Params.Image | absURL }}" onerror="this.src='{{ .Params.ImageAlt | absURL }}'" alt="patient image">
+              <span class="model-count position-absolute">Patient {{$.Scratch.Get `counter`}}</span>
+            </div>
+            <h4>{{ (site.GetPage $section).Title }} {{$.Scratch.Get `counter`}}</h4>
+            <a class="btn btn-outline-primary btn-sm" href="{{ .Permalink }}">See Results</a>
+          </div>
+        </div>
+      {{ end }}
+      <div class="col-12 text-center mb-100">
+        {{ with .Site.Data.homepage.model.button }}
+        <a href="{{ .URL }}" class="btn btn-primary">{{ .btnText }}</a>
+        {{ end }}
+      </div>
+      <div class="col-12 overflow-hidden">
+        <div class="border-dashed-bottom border-primary"></div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /our patients -->" | safeHTML }}
+
+
+{{ "<!-- doctor -->" | safeHTML }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 align-self-center">
+        <img class="img-fluid" src="{{ .Site.Data.homepage.doctor.image | absURL }}" onerror="this.src='{{ .Site.Data.homepage.doctor.imageAlt | absURL }}'" alt="{{ .Site.Data.homepage.doctor.altText }}">
+      </div>
+      <div class="col-md-6">
+        <div class="pl-md-4">
+          {{ with .Site.Data.homepage.doctor }}
+          <h2 class="text-primary mb-1">{{ .title }}</h2>
+          <h1 style="font-size:30px;" class="section-title">{{ .designation }}</h1>
+          <p class="mb-lg-5 mb-lg-3">{{ .content }}</p>
+          <h4 class="mb-3">Dedicated To Patient Satisfaction</h4>
+          <img class="img-fluid w-100 mb-lg-5 mb-3" src="{{ .certificates | absURL }}" onerror="this.src='{{ .certificatesAlt | absURL }}'" alt="certificates">
+          {{ with .button }}
+          <a href="{{ .URL }}" class="btn btn-primary mb-3">{{ .btnText }}</a>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /doctor -->" | safeHTML }}
+
+{{ "<!-- partners -->" | safeHTML }}
+<section class="section-sm partner-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <ul class="list-inline d-flex justify-content-between align-items-center">
+          {{ range .Site.Data.homepage.partners }}
+          <li class="list-inline-item p-2"><img class="img-fluid" src="{{ .logo | absURL }}" alt="{{ .altText }}"></li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /partners -->" | safeHTML }}
+
+{{ "<!--body block -->" | safeHTML }}
+<section class="section bg-gray pb-0 mb-100">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+      {{ with .Site.Data.homepage.bodyblock }}
+        <h2 class="text-primary mb-1">{{ .title | safeHTML }}</h2>
+        <h3 class="section-title">{{ .designation | safeHTML }}</h3>
+        <p class="mb-lg-5 mb-lg-3"> <p class="mb-lg-5 mb-lg-3"><img src="images/homepage/body-sculpting.webp" onerror="this.src='images/homepage/body-sculpting.jpg'"alt="body sculpting in chicago" style="float:right;">
+        {{ .content | safeHTML }}</p>
+        {{ with .button }}
+        <a href="{{ .URL }}" class="btn btn-primary mb-3">{{ .btnText }}</a>
+        {{ end }}
+        {{ end }}
+      {{ "<!--body advantage list -->" | safeHTML }}
+      <div class="col-12">
+        <div class="bg-secondary treatment-block">
+          <h2 class="section-title text-white">{{ with .Site.Data.homepage.bodyadvantage.title }}{{ . | safeHTML }} {{end }}</h2>
+          <ul class="list-inline list-styled style-white">
+            {{ range .Site.Data.homepage.bodyadvantage.list }}
+            <li class="list-inline-item mb-3"><a class="text-white" href="{{ .URL }}">{{ .listItem }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{{ "<!--medspa block -->" | safeHTML }}
+<section class="section mb-100">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+      {{ with .Site.Data.homepage.medspablock }}
+          <h2 class="text-primary mb-1">{{ .title | safeHTML }}</h2>
+          <h3 class="section-title">{{ .designation | safeHTML }}</h3>
+          <p class="mb-lg-5 mb-lg-3">{{ .content | safeHTML }}</p>
+          {{ with .button }}
+          <a href="{{ .URL }}" class="btn btn-primary mb-3">{{ .btnText }}</a>
+          {{ end }}
+          {{ end }}
+      {{ "<!--medspa advantage list -->" | safeHTML }}
+      <div class="col-12">
+        <div class="bg-secondary treatment-block">
+          <h2 class="section-title text-white">{{ with .Site.Data.homepage.medspaadvantage.title }}{{ . | safeHTML }} {{end }}</h2>
+          <ul class="list-inline list-styled style-white">
+            {{ range .Site.Data.homepage.medspaadvantage.list }}
+            <li class="list-inline-item mb-3"><a class="text-white" href="{{ .URL }}">{{ .listItem }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!--/medspablock -->" | safeHTML }}
+
+{{ "<!-- promo video -->" | safeHTML }}
+<section class="section bg-gray">
+  <div class="container">
+    <div class="row">
+      {{ with .Site.Data.homepage.promoVideo }}
+      <div class="col-md-6">
+        <div class="position-relative">
+          <img class="img-fluid" src="{{ .videoThumb | absURL }}" onerror="this.src='{{ .videoThumbAlt | absURL }}'" alt="{{ .altText }}">
+          <div class="play-video bg-secondary">
+            <a href="{{ .videoURL }}" data-vbtype="video" class="venobox"><i class="play-icon"></i></a>
+            <span class="d-block text-white h5">Watch Our Videos</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 align-self-center">
+        <h2>{{ .title }}</h2>
+        <h3 class="text-primary mb-4">{{ .subTitle }}</h3>
+        <p class="mb-4">{{ .content }}</p>
+        {{ with .button }}
+        <a href="{{ .URL }}" class="btn btn-primary">{{ .btnText }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ "<!-- /promo video -->" | safeHTML }}
+
+{{ "<!-- testimonial -->" | safeHTML }}
+<section class="section mb-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        {{ with .Site.Data.homepage.testimonial }}
+        <h2 class="section-title">{{ .title }}</h2>
+        <p class="mb-5">{{ .description }}</p>
+        {{ end }}
+      </div>
+    </div>
+    <div class="testimonial-slider row">
+      {{ range .Site.Data.homepage.testimonial.sliderItem }}
+      <div class="col-lg-4 col-6">
+        <div class="card rounded-0 pb-4 testimonial-item">
+          <div class="card-header text-center bg-gray pt-5 pb-0 border-0 mb-60">
+            <img class="d-inline-block" src="{{ `images/quote-icon.png` | relURL}}" alt="'">
+            <div class="card-img">
+              <img class="rounded-circle d-inline-block" src="{{ .image | absURL }}" onerror="this.src='{{ .imageAlt | absURL }}'" alt="{{ .altText }}">
+            </div>
+          </div>
+          <div class="card-body text-center">
+            <h5>{{ .title }}</h5>
+            <span class="mb-4 d-block">{{ .designation }}</span>
+            <p class="mb-4">{{ .content }}</p>
+            <ul class="list-inline rating {{ .ratingStar | lower }}">
+              <li class="list-inline-item"><i class="ti-star"></i></li>
+              <li class="list-inline-item"><i class="ti-star"></i></li>
+              <li class="list-inline-item"><i class="ti-star"></i></li>
+              <li class="list-inline-item"><i class="ti-star"></i></li>
+              <li class="list-inline-item"><i class="ti-star"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ "<!-- /testimonial -->" | safeHTML }}
+
+{{ "<!-- vip membership -->" | safeHTML }}
+<section class="section bg-gray bg-shape">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-md-6 mb-4 mb-md-0">
+        {{ with .Site.Data.homepage.vip }}
+        <h2 class="section-title">{{ .title }}<br>
+          <span class="text-primary font-weight-light">{{ .titleSpan }}</span></h2>
+        <p class="mb-4">{{ .content }}</p>
+        {{ end }}
+        <ul class="list-styled">
+          {{ range .Site.Data.homepage.vip.advantageList }}
+          <li class="text-dark mb-2">{{ .listItem }}</li>
+          {{ end }}
+        </ul>
+        <a href="" class="btn btn-primary mt-2">Get Started Now</a>
+      </div>
+      <div class="col-lg-5 col-md-6 align-self-end">
+        <img class="img-fluid" src="{{ .Site.Data.homepage.vip.card | absURL }}" onerror="this.src='{{ .Site.Data.homepage.vip.cardAlt | absURL }}'" alt="{{ .Site.Data.homepage.vip.altText }}">
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /vip membership -->" | safeHTML }}
+
+{{ "<!-- blog -->" | safeHTML }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        {{ with .Site.Data.homepage.blog }}
+        <h2 class="section-title">{{ .title }}</h2>
+        <p class="mb-5">{{ .description }}</p>
+        {{ end }}
+      </div>
+      {{ range first 3 ( where .Data.Pages "Type" "post")}}
+      <article class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <img class="mb-3 img-fluid w-100" src="{{ .Params.Image | absURL }}" onerror="this.src='{{ .Params.ImageAlt | absURL }}'" alt="post-thumb">
+        <span class="author mb-2 text-primary d-block">by {{ .Params.Author }}</span>
+        <h4><a class="text-dark" href="{{ .Permalink }}">{{ .Title }}</a></h4>
+        <span class="mb-3 d-block">Posted on {{ .PublishDate.Format "Jan 02 2006" }}</span>
+        <p>{{ .Summary }}</p>
+        <a href="{{ .Permalink }}" class="btn btn-primary">read more</a>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ "<!-- /blog -->" | safeHTML }}
+
+
+{{ end }}

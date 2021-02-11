@@ -1,0 +1,150 @@
+.slider {
+  &-item {
+    padding-bottom: 260px;
+  }
+
+  .slick-dots {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 0;
+    @include mobile {
+      right: unset;
+      left: 15px;
+      top: calc( 100% - 200px);
+      transform: translate(0, 0);
+    }
+
+    li {
+      &.slick-active {
+        button {
+          background: $white;
+        }
+      }
+      @include mobile {
+        display: inline-block;
+        margin: 5px;
+      }
+
+      button {
+        padding: 0;
+        height: 16px;
+        width: 16px;
+        border: 2px solid $white;
+        border-radius: 50%;
+        background: transparent;
+        color: transparent;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.consultation {
+  margin-top: -100px;
+}
+
+.service-bg {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 70%;
+    background: $gray;
+  }
+}
+
+.gallery {
+  &-slider {
+    .prevArrow {
+      top: -100px;
+      left: unset;
+      right: 90px;
+      @include mobile {
+        top: unset;
+        bottom: -80px;
+        right: unset;
+        left: calc(50% - 70px);
+      }
+    }
+
+    .nextArrow {
+      top: -100px;
+      right: 15px;
+      @include mobile {
+        top: unset;
+        bottom: -80px;
+        right: calc(50% - 70px);
+      }
+    }
+  }
+
+  &-item {
+    position: relative;
+    &:hover{
+      &::before{
+        opacity: 1;
+      }
+      .hover-icon a{
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      background: rgba($color: $secondary-color, $alpha: .7);
+      opacity: 0;
+      transition: .2s ease;
+    }
+
+    .hover-icon {
+      a {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        color: $white;
+        font-size: 20px;
+        background: darken($color: $primary-color, $amount: 5);
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 70px;
+        transition: .2s ease;
+      }
+    }
+  }
+}
+
+.cta-bg{
+  &::before{
+    background-image: url(../images/backgrounds/treatment-block.png);
+    background-position: center center;
+  }
+}
+
+/* service-single */
+.faq{
+  strong{
+    color: $primary-color;
+  }
+  h3,h4,h5{
+    margin-bottom: 20px;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+/* /service-single */

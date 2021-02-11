@@ -1,0 +1,330 @@
+{{ define "main" }}
+
+{{ partial "nav-breast.html" . }}
+
+{{ partial "page-title.html" . }}
+
+
+<section class="section breast-gallery">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-lg-4">
+				<div class="category">
+					<ul>
+
+						{{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+							{{ with $.Site.GetPage (printf "/categories/%s" $name) }}
+							<li class="border-bottom has-subcat">
+								<a href="{{ .Permalink  }}" class="d-block text-color py-10">{{ .Title }}</a>
+
+							</li>    
+
+							{{ end }}
+							{{ end }}
+
+						<li class="cat-item current-cat">
+							<a class="active" aria-current="page" href="{{ "breast-gallery" | absURL }}"><i class="fa fa-arrow-circle-down"></i> Breast</a>
+							<ul class='children'>
+								
+								{{ range $index, $element := .Site.Data.breastGallery.filterList }}
+								
+									<li class="border-bottom cat-item cat-item-{{ $index }}">
+										<a href="{{ .name | urlize }}" class="" data-filter=".{{ .category | lower }}">{{ .name }}</a>
+									</li>
+								{{ end }}
+
+							</ul>
+						</li>
+						</ul>
+				</div>
+			</div>
+			<div class="col-xs-12 col-lg-8">
+				<div class="g-content">
+					
+
+					{{ $showDataOnload := .Site.Data.breastGallery.galleryRules.showDataOnload }}
+					{{ $sPath := .Site.Data.breastGallery.galleryPath.baseFolder }}
+					{{ $absPath := .Site.Data.breastGallery.galleryPath.absPath }}
+					{{ $dirPath := (printf "/%s/%s/" $sPath $absPath ) }}
+					{{ $scratch := newScratch }}
+					{{ range $elem_key, $elem_val := .Site.Data.breastGallery.galleryItem }}
+						{{ $elem_key := add $elem_key 1 }}
+						{{ $binfo := .binfo }}
+						{{ $ainfo := .ainfo }}
+						{{ $details := .details }}
+						{{ $review := .review }}
+						{{ $itemTitle := .itemTitle }}
+						{{ $catTitle := .catTitle }}
+
+						{{ if .imageFolder }}
+						{{ $pn := .imageFolder }}
+						{{ $path := printf "%s%s" $dirPath $pn }}
+						{{ $images := readDir $path }}
+						{{ range $imgNum, $elem :=  $images }}
+							{{ if .IsDir }} 
+
+							{{ else }}
+							
+
+					<div class="item-group">
+						<h2 class="gallery-title"><i class="fa fa-camera"></i> {{ $catTitle }} Gallery</h2>
+						<div class="item">
+							<!-- <div class="gallery-tile-wrapper"> -->
+								<div class="row text-center">
+									<div class="col-sm-6 col-md-5 wrapper-img"> 
+										<img class="img-responsive" data-picid="{{ $elem_key }}" data-src="{{ printf "%s/%s/%s" $absPath $pn .Name | absURL }}" alt="{{ .Name }}">
+										<div class="row">
+											<div class="col-lg-6 col-sm-6 col-xs-6">
+												<span class="img-caption">Before</span>
+											</div>
+											<div class="col-sm-6 col-xs-6">
+												<span class="img-caption">After</span>
+											</div>
+										</div>
+										
+									</div>
+									<div class="col-sm-6 col-md-7">
+										<div class="row">
+											<div class="col-sm-12 ttl"><h3>{{ $itemTitle }}</h3></div>
+											<div class="col-sm-12 sum">
+												<div class="row">
+													<div class="col-xs-12"><p> Age: 24<br/> Gender: Female<br/> Correction of Tuberous Breasts with textured, subglandular silicone gel breast implants for thi ...</p></div>
+													<div class="col-sm-12"> 
+														<a class="btn btn-blue btn-sm" href="{{ "beforeandafter" | absURL }}">View Photos</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							<!-- </div> -->
+						</div>
+					</div>
+
+					{{ end }}
+					{{ end }}
+					{{ end }}
+					{{ end }}
+
+					<div class="item-group">
+						<h2 class="gallery-title"><i class="fa fa-camera"></i> Breast Asymmetry Gallery</h2>
+						<div class="item">
+							<!-- <div class="gallery-tile-wrapper"> -->
+								<div class="row text-center">
+									<div class="col-sm-6 col-md-5 wrapper-img"> 
+										<div class="row">
+											<div class="col-lg-6">
+												<img src="https://www.drjjwendel.com/wp-content/uploads/2017/12/58847-147862-before-300x298.jpg" role="presentation" class="img-responsive before"/>
+												<span class="img-caption">Before</span>
+											</div>
+											<div class="col-lg-6">
+												<img src="https://www.drjjwendel.com/wp-content/uploads/2017/12/58847-147862-after-300x293.jpg" role="presentation" class="img-responsive after"/>
+												<span class="img-caption">After</span>
+											</div>
+										</div>
+										
+									</div>
+									<div class="col-sm-6 col-md-7">
+										<div class="row">
+											<div class="col-sm-12 ttl"><h3> Breast Asymmetry</h3></div>
+											<div class="col-sm-12 sum">
+												<div class="row">
+													<div class="col-xs-12"><p> Age: 24<br/> Gender: Female<br/> Correction of Tuberous Breasts with textured, subglandular silicone gel breast implants for thi ...</p></div>
+													<div class="col-sm-12"> 
+														<a class="btn btn-blue btn-small" href="https://www.drjjwendel.com/beforeandafter/breast-augmentation-1/">View Photos</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							<!-- </div> -->
+						</div>
+						<div class="item">
+							<!-- <div class="gallery-tile-wrapper"> -->
+								<div class="row text-center">
+									<div class="col-sm-6 col-md-5 wrapper-img"> 
+										<div class="row">
+											<div class="col-lg-6">
+												<img src="https://www.drjjwendel.com/wp-content/uploads/2017/12/58847-147862-before-300x298.jpg" role="presentation" class="img-responsive before"/>
+												<span class="img-caption">Before</span>
+											</div>
+											<div class="col-lg-6">
+												<img src="https://www.drjjwendel.com/wp-content/uploads/2017/12/58847-147862-after-300x293.jpg" role="presentation" class="img-responsive after"/>
+												<span class="img-caption">After</span>
+											</div>
+										</div>
+										
+									</div>
+									<div class="col-sm-6 col-md-7">
+										<div class="row">
+											<div class="col-sm-12 ttl"><h3> Breast Asymmetry</h3></div>
+											<div class="col-sm-12 sum">
+												<div class="row">
+													<div class="col-xs-12"><p> Age: 24<br/> Gender: Female<br/> Correction of Tuberous Breasts with textured, subglandular silicone gel breast implants for thi ...</p></div>
+													<div class="col-sm-12"> 
+														<a class="btn btn-blue btn-small" href="https://www.drjjwendel.com/beforeandafter/breast-augmentation-1/">View Photos</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							<!-- </div> -->
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="text-center mb-5 cats">
+		{{ range $index, $element := .Site.Data.breastGallery.filterList }}
+			{{ if eq $index 6 }}
+				<br/>
+			{{ end }}
+			<a href="javascript:void(0)" class="btn btn-default" data-filter=".{{ .category | lower }}">{{ .name }}</a>
+		{{ end }}
+	</div>
+    <div class="gallery-container container">
+		<div class="row">
+			{{ $showDataOnload := .Site.Data.breastGallery.galleryRules.showDataOnload }}
+			{{ $sPath := .Site.Data.breastGallery.galleryPath.baseFolder }}
+			{{ $absPath := .Site.Data.breastGallery.galleryPath.absPath }}
+			{{ $dirPath := (printf "/%s/%s/" $sPath $absPath ) }}
+			{{ $scratch := newScratch }}
+			{{ range $elem_key, $elem_val := .Site.Data.breastGallery.galleryItem }}
+				{{ $elem_key := add $elem_key 1 }}
+				{{ $binfo := .binfo }}
+				{{ $ainfo := .ainfo }}
+				{{ $details := .details }}
+				{{ $review := .review }}
+				<div class="mix mix-extension {{ .categories | lower }} col-md-4">
+					{{ if .imageFolder }}
+						{{ $pn := .imageFolder }}
+						{{ $path := printf "%s%s" $dirPath $pn }}
+						{{ $images := readDir $path }}
+						{{ range $imgNum, $elem :=  $images }}
+							{{ if .IsDir }} 
+								<div class="more-pic-{{ $elem_key }} hide">
+									<div class="more-pic-items">
+										<div class="col-lg-12">
+											<div class="mix-extension childs-pic">
+												
+												
+												<div class="row">
+													{{ $morePicPath := printf "%s/%s" $path "more_pic" }}
+													{{ $moreImages := readDir $morePicPath }}
+													{{ range $mImgNum, $mElem :=  $moreImages }}
+														<div class="col-md-4">
+															<img class="img-fluid more-img" data-picid="{{ $elem_key }}" data-src="{{ printf "%s/%s/%s/%s" $absPath $pn "more_pic" .Name | absURL }}" alt="{{ .Name }}">
+														</div>
+													{{end }}
+												</div>
+											</div>
+
+												<div class="bullet-points bp-style">
+													<div class="row">
+														<div class="col-lg-6 bt">
+															<ul class="p1">
+																{{ if $binfo }}
+																	{{ range $binfo }}
+																	<li>{{ . }}</li>
+																	{{ end }}
+																{{ end }}
+															</ul>
+														</div>
+														<div class="col-lg-6 at">
+															<ul class="p2">
+																{{ if $ainfo }}
+																{{ range $ainfo }}
+																<li>{{ . }}</li>
+																{{ end }}
+																{{ end }}
+															</ul>
+														</div>
+
+													</div>
+													<div class="row details-margin">
+														<div class="col-lg-12 at">
+															{{ with $details }}
+																<div class="details">
+																	{{ $details | safeHTML }}
+																</div>
+															{{ end }}
+															{{ with $review }}
+																<div class="review-box">
+																	<span class="patient-name">{{ index $review 0}}</span>
+																	<span class="rating">
+																		{{ $rating := index $review 1 }}
+																		{{ range $i, $sequence :=  (seq $rating) }}
+																			<i class="fa fa-star"></i>
+																		{{ end }}
+																	</span><br>
+																	<span class="review">- {{ index $review 2}}</span>
+																</div>
+															{{ end }}
+														</div>
+
+													</div>
+													</div>
+
+										</div>
+									</div>
+								</div>
+							{{ else }}
+								<div class="base-img-container">
+									<img class="img-fluid top-img" data-picid="{{ $elem_key }}" data-src="{{ printf "%s/%s/%s" $absPath $pn .Name | absURL }}" alt="{{ .Name }}">
+									<div class="content">
+										<p>Click to see additional images..</p>
+									</div>
+								</div>
+							{{ end }}
+						{{ end }}
+					{{ end }}
+
+					
+					{{ if eq $showDataOnload "yes" }}
+					<div class="bullet-points">
+						<div class="row">
+							<div class="col-lg-6 bt">
+								<ul class="p1"> 
+									{{ range .binfo }}
+										<li>{{ . }}</li>
+									{{ end }}
+									
+								</ul>
+							</div>
+							<div class="col-lg-6 at">
+								<ul class="p2">
+									{{ range .ainfo }}
+										<li>{{ . }}</li>
+									{{ end }}
+									
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+					{{ end }}
+				</div>
+				<div class="more-pic-placeholder placeholder-id-{{ $elem_key }}" > <!--do not remove me :( --> </div>
+			{{ end }}
+		</div>
+	</div>
+</section>
+
+<div class="show">
+	<div class="img-show">
+		<span class="btn-close">X</span>
+		<div class="ph_more_pic_info"></div>
+	</div>
+</div>
+
+{{ "<!-- /gallery -->" | safeHTML }}
+
+{{ end }}
+

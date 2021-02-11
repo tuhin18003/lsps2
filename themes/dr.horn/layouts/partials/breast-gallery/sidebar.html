@@ -1,0 +1,18 @@
+<div class="category">
+    <ul>
+        <li class="cat-item current-cat">
+            <a class="active" aria-current="page" href="{{ "breast-gallery" | absURL }}"><i class="fa fa-arrow-circle-down"></i> Breast</a>
+            <ul class='children'>
+                {{ $currentURL := .Permalink }}
+
+                {{ $section := "breast-gallery" }}
+                {{ range (where .Site.RegularPages.ByWeight "Section" $section ) }}
+                        <li class="border-bottom has-subcat">
+                            <a href="{{ .Permalink  }}" class="d-block text-color py-10 {{ if in $currentURL .Permalink }} active-page {{ end }}"> {{ .Title }}</a>
+                        </li>    
+                {{ end }}
+
+            </ul>
+        </li>
+        </ul>
+</div>

@@ -1,0 +1,38 @@
+<!-- navigation -->
+<header class="sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand ml-4" href="{{ .Site.BaseURL }}"><img class="img-fluid" src="{{ .Site.Params.logo | absURL }}" alt="The Michiel Horn | Center For Cosmetic Surgery"></a>
+    <button class="navbar-toggler mr-4 rounded-0" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navigation">
+      <ul class="navbar-nav mx-auto text-center">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
+        </li>
+        {{ range .Site.Menus.medspa}}
+        {{ if .HasChildren }}
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            {{ .Name }}
+          </a>
+          <div class="dropdown-menu">
+            {{ range .Children }}
+            <a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a>
+            {{ end }}
+          </div>
+        </li>
+        {{ else }}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+        {{ end }}
+      </ul>
+      <a href="tel:{{ with .Site.Params.navBtn.URL }}{{ . }}{{ end }}" class="btn h4 text-white border-0">{{ with .Site.Params.navBtn.btnText }}{{ . }}{{ end }} <br> <small class="text-white">{{ with .Site.Params.navBtn.btnSubText }}{{ . }}{{ end }}</small></a>
+    </div>
+  </nav>
+</header>
+<!-- /navigation -->

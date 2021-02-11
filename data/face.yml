@@ -1,0 +1,112 @@
+# slider
+slider:
+  # slider item
+  - bgImage : "images/slider/face/face1.webp"
+    bgImageAlt : "images/slider/face/face1.jpg"
+    title : "Face Procedure Surgery Chicago Cosmetic Surgeon Dr. Michael Horn"
+    content : "Facial Cosmetic Surgeon, Dr. Michael Horn Uses State of The Art Techniques."
+    btnText1 : "Schedule a Consultation"
+    URL1 : "/contact"
+    btnText2 : "Call Today"
+    URL2 : "3122029000"
+    
+    
+  # slider item
+  - bgImage : "images/slider/face/face2.webp"
+    bgImageAlt : "images/slider/face/face2.jpg"
+    title : "Erase Years of Aging With Face Surgery"
+    content : "Wrinkles & Sagging Skin No More! Dr. Michael Horn Is a Facial Plastic Surgery Specialist"
+    btnText1 : "Schedule a Consultation"
+    URL1 : "/contact"
+    btnText2 : "Call Today"
+    URL2 : "3122029000"
+    
+    
+  # service Description
+serviceDescription:
+  image : "images/face.webp"
+  imageAlt : "images/face.jpg"
+  altText : "breast-augmentation"
+  title : "Cosmetic Face Surgery Chicago Cosmetic Surgeon"
+  subTitle : "Dr. Michael Horn"
+  content : "Led by renowned plastic surgeon Michael A. Horn, M.D., the Michael Horn Center for Cosmetic Surgery is dedicated to helping patients achieve their personal appearance goals by providing the highest quality medical care tailored to their individual needs."
+  button :
+    btnText : "Contact Us"
+    URL : "/contact"
+
+# gallery
+gallery:
+  title : "See Our Gallery"
+  titleSpan : "of Beautiful Clients"
+  galleryItem:
+    - image : "images/gallery/rhinoplasty/001.webp"
+      imageAlt : "images/gallery/rhinoplasty/001.jpg"
+      altText : "forehead lift surgery"
+      
+    - image : "images/gallery/rhinoplasty/002.webp"
+      imageAlt : "images/gallery/rhinoplasty/002.jpg"
+      altText : "Chicago facial implant surgeon Dr. Michael Horn"
+      
+    - image : "images/gallery/rhinoplasty/007.webp"
+      imageAlt : "images/gallery/rhinoplasty/007.jpg"
+      altText : "Ear Otoplasty surgery for Chicago"
+      
+    - image : "images/gallery/rhinoplasty/008.webp"
+      imageAlt : "images/gallery/rhinoplasty/008.jpg"
+      altText : "Eyelid lift surgery, The Michael Honr Center for Cosmetic Surgery"
+      
+    - image : "images/gallery/face-neck-lift/004.webp"
+      imageAlt : "images/gallery/face-neck-lift/004.jpg"
+      altText : "Chicago Rhinoplasty surgery center"
+      
+    - image : "images/gallery/face-neck-lift/005.webp"
+      imageAlt : "images/gallery/face-neck-lift/005.jpg"
+      altText : "Facelift surgeon, Dr. Micheal Horn Chicago location"
+      
+    - image : "images/gallery/face-neck-lift/006.webp"
+      imageAlt : "images/gallery/face-neck-lift/006.jpg"
+      altText : "Necklift surgery"
+      
+    - image : "images/gallery/face-neck-lift/007.webp"
+      imageAlt : "images/gallery/face-neck-lift/007.jpg"
+      altText : "Brow lift Chicago"
+      
+    - image : "images/gallery/face-neck-lift/009.webp"
+      imageAlt : "images/gallery/face-neck-lift/009.jpg"
+      altText : "Facial plastic surgery in Chicago"
+
+    - image : "images/gallery/face-neck-lift/010.webp"
+      imageAlt : "images/gallery/face-neck-lift/010.jpg"
+      altText : "The Michael Honr Center for Cosmetic Surgery"
+
+    - image : "images/gallery/otoplasty/1/1gal.webp"
+      imageAlt : "images/gallery/otoplasty/1/1gal.jpg"
+      altText : "Otoplasty surgery for ear pinning"
+      
+    - image : "images/gallery/otoplasty/2/2gal.webp"
+      imageAlt : "images/gallery/otoplasty/2/2gal.jpg"
+      altText : "ear surgery to fix protruding ears"
+      
+    - image : "images/gallery/otoplasty/3/3gal.webp"
+      imageAlt : "images/gallery/otoplasty/3/3gal.jpg"
+      altText : "otoplasty surgery before and after photo"  
+
+# before and after procedure
+beforeAfter:
+  title : "Real Beautiful Results"
+  description : ""
+  before : "Before procedures"
+  after : "After procedures"
+  beforeImage: "images/procedure/face/rhinoplasty-before.webp"
+  beforeImageAlt: "images/procedure/face/rhinoplasty-before.jpg"
+  afterImage: "images/procedure/face/rhinoplasty-after.webp"
+  afterImageAlt: "images/procedure/face/rhinoplasty-after.jpg"
+
+#call to action
+cta:
+  title : "Have Any"
+  titleSpan : "Questions?"
+  content : "Led by renowned plastic surgeon Michael A. Horn, M.D., the Michael Horn Center for Cosmetic Surgery is dedicated to helping patients achieve their personal appearance goals."
+  button:
+    btnText : "Request Consultation"
+    URL : "/contact"

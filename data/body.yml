@@ -1,0 +1,85 @@
+# slider
+slider:
+  # slider item
+  - bgImage : "images/slider/body/slide-2.webp"
+    bgImageAlt : "images/slider/body/slide-2.jpg"
+    title : "Chicago Body Shaping - Lasting Results"
+    content : "Great cosmetic surgeons understand that listening to a patient <br>
+              describe their body, reveals what the true vison of beauty is."
+    btnText1 : "Schedule a Consultation"
+    URL1 : "/contact"
+    btnText2 : "Call Today"
+    URL2 : "3122029000"
+    
+  
+  # slider item
+  - bgImage : "images/slider/body/slide-1.webp"
+    bgImageAlt : "images/slider/body/slide-1.jpg"
+    title : "Surgical & Non-Surgical Body Contouring - Chicago"
+    content : "When possible, Dr. Horn looks for non-invasive solutions to <br/>
+              achieve the body sculpting / beauty results patients desire."
+    btnText1 : "Schedule a Consultation"
+    URL1 : "/contact"
+    btnText2 : "Call Today"
+    URL2 : "3122029000"
+    
+
+
+# service Description
+serviceDescription:
+  image : "images/body/bodypage.webp"
+  imageAlt : "images/body/bodypage.png"
+  altText : "Body plastic surgery and sculpting Chicagoo Surgeon Dr. Michael Horn"
+  title : "Body Sculpting Procedures"
+  subTitle : "Body contouring procedures at our Chicago practice"
+  content : "At the Michael Horn Center for Cosmetic Surgery located in Chicago, Dr. Horn offers a variety of options for body contouring. Some of the procedures he performs include 
+            liposuction, body lift procedures, tummy tucks (abdominoplasty), butt lift, mommy makeover, body contouring and vaginal rejuevenation. These procedures will give you the body you’ve always wanted.
+            Dr. Horn creates a customized treatment plan tailored to every patient’s individual desire."
+  button :
+    btnText : "Contact Us"
+    URL : "/contact"
+
+# gallery
+gallery:
+  title : "See Our Gallery"
+  titleSpan : "of Beautiful Clients"
+  galleryItem:
+    - image : "images/gallery/bodygallery/008.webp"
+      imageAlt : "images/gallery/bodygallery/008.jpg"
+      altText : "Remove fat with liposuction procedure Chicago"
+      
+    - image : "images/gallery/bodygallery/010.webp"
+      imageAlt : "images/gallery/bodygallery/010.jpg"
+      altText : "Chicago body lift & contouring surgeon, Dr. Michael Horn"
+      
+    - image : "images/gallery/bodygallery/016.webp"
+      imageAlt : "images/gallery/bodygallery/016.jpg"
+      altText : "mommy makeover procedure, Chicago plastic surgery center"
+      
+    - image : "images/gallery/bodygallery/020.webp"
+      imageAlt : "images/gallery/bodygallery/020.jpg"
+      altText : "Tummy tuck surgery Chicago and surrounding areas"
+      
+    - image : "images/gallery//bodygallery/001.webp"
+      imageAlt : "images/gallery//bodygallery/001.jpg"
+      altText : "Chicago vaginal rejuvenation & labiaplasty surgery"
+      
+# before and after procedure
+beforeAfter:
+  title : "Real Beautiful Results"
+  description : ""
+  before : "Before procedures"
+  after : "After procedures"
+  beforeImage: "images/procedure/body/bodybefore.webp"
+  beforeImageAlt: "images/procedure/body/bodybefore.jpg"
+  afterImage: "images/procedure/body/bodyafter.webp"
+  afterImageAlt: "images/procedure/body/bodyafter.jpg"
+
+#call to action
+cta:
+  title : "Have Any"
+  titleSpan : "Questions?"
+  content : "Led by renowned plastic surgeon Michael A. Horn, M.D., the Michael Horn Center for Cosmetic Surgery is dedicated to helping patients achieve their personal appearance goals."
+  button:
+    btnText : "Request Consultation"
+    URL : "/contact"

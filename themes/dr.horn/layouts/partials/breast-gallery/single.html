@@ -1,0 +1,97 @@
+
+{{ partial "nav-breast.html" . }}
+
+{{ partial "page-title.html" . }}
+
+<section class="section breast-gallery">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-lg-4">
+				{{ partial "breast-gallery/sidebar" . }}
+			</div>
+			<div class="col-xs-12 col-lg-8">
+				<div class="g-content">
+                    <div class="item-group">
+						<h2 class="gallery-title"><i class="fa fa-camera"></i>  {{ $catName := .Params.catName }} {{ $catName }} Gallery</h2>
+
+					{{ $showDataOnload := .Site.Data.breastGallery.galleryRules.showDataOnload }}
+					{{ $sPath := .Site.Data.breastGallery.galleryPath.baseFolder }}
+					{{ $absPath := .Site.Data.breastGallery.galleryPath.absPath }}
+					{{ $dirPath := (printf "/%s/%s/" $sPath $absPath ) }}
+					{{ $scratch := newScratch }}
+					{{ $currentCat := .Params.catSlug }}
+
+					{{ range  $elem_key, $elem_val := .Site.Data.breastGallery.galleryItem  }}
+
+						{{ $cat := .categories }}
+						{{ if in $cat $currentCat  }}
+								
+						{{ $elem_key := add $elem_key 1 }}
+						{{ $itemTitle := .itemTitle }}
+						{{ $details := .details }}
+						{{ $age := .age }}
+
+						{{ if .imageFolder }}
+						{{ $pn := .imageFolder }}
+						{{ $path := printf "%s%s" $dirPath $pn }}
+						{{ $images := readDir $path }}
+						{{ range $imgNum, $elem :=  $images }}
+							{{ if .IsDir }} 
+
+							{{ else }}
+
+
+						<div class="item">
+							<!-- <div class="gallery-tile-wrapper"> -->
+								<div class="row text-center">
+									<div class="col-sm-6 col-md-5 wrapper-img"> 
+
+										<img class="img-responsive" data-picid="{{ $elem_key }}" data-src="{{ printf "%s/%s/%s" $absPath $pn .Name | absURL }}" alt="{{ .Name }}">
+									
+										<div class="row">
+											<div class="col-lg-6 col-sm-6 col-xs-6">
+												<span class="img-caption">Before</span>
+											</div>
+											<div class="col-sm-6 col-xs-6">
+												<span class="img-caption">After</span>
+											</div>
+										</div>
+										
+									</div>
+									<div class="col-sm-6 col-md-7">
+										<div class="row">
+											<div class="col-sm-12 ttl"><h3 class="title">{{ $catName }}</h3></div>
+											<div class="col-sm-12 sum">
+												<div class="row">
+													<div class="col-sm-12 text-center">
+														<p class="text-center"> {{ with $age }} Age: {{ $age }} <br/> {{ end }}
+															Gender: Female<br/> 
+															{{ substr $details 0 30 }} ...
+														</p>
+													</div>
+													<div class="col-sm-12"> 
+														<a class="btn btn-blue btn-sm" href="{{ "breast-gallery/beforeandafter" | absURL }}/?listing={{ $pn }}">View Photos</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							<!-- </div> -->
+						</div>
+
+
+					{{ end }}
+					{{ end }}
+					{{ end }}
+					{{ end }}
+					{{ end }}
+
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

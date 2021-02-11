@@ -1,0 +1,35 @@
+{{ define "main" }}
+
+{{ partial "header.html" . }}
+
+{{ partial "page-title.html" . }}
+
+<!-- blog -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <article>
+          <img class="mb-4 img-fluid w-100" src="{{ .Params.Image | absURL }}" onerror="this.src='{{ .Params.ImageAlt | absURL }}'" alt="{{ .Params.AltText }}">
+          <span class="mb-3 d-block text-primary">Posted on {{ .PublishDate.Format "Jan 02 2006" }}</span>
+          <div class="content">
+            {{ .Content }}
+          </div>
+        </article>
+        <div class="mt-5 mb-5 mb-lg-0">
+          <ul class="list-inline social-icon-alt">
+            {{ range .Site.Params.sharePost }}
+            <li class="list-inline-item"><a href="{{ .URL }}"><i class="{{ .icon }}"></i></a></li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+      {{ partial "sidebar.html" . }}
+    </div>
+  </div>
+</section>
+<!-- /blog -->
+
+{{ partial "vip-membership.html" . }}
+
+{{ end }}

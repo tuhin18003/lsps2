@@ -1,0 +1,59 @@
+{{ define "main" }}
+
+{{ partial "nav-breast.html" . }}
+
+{{ partial "page-title.html" . }}
+
+<section class="translate-top">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-8 mb-4 mb-lg-0">
+          {{ if .Params.BeforeAfter }}
+          <div id="comparison" class="my-4">
+              <figure style="background-image: url('{{ .Params.afterImage | absURL }}'),url('{{ .Params.afterImageAlt | absURL }}');" alt="{{ .Params.AltText }}">
+                <div id="handle"></div>
+                <div id="divisor" style="background-image: url('{{ .Params.beforeImage | absURL }}'),url('{{ .Params.beforeImageAlt | absURL }}');" alt="{{ .Params.AltText2 }}"></div>
+              </figure>
+              <input type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()">
+            </div>
+            <script>
+              var divisor = document.getElementById("divisor"),
+              handle = document.getElementById("handle"),
+              slider = document.getElementById("slider");
+              function moveDivisor() {
+                handle.style.left = slider.value+"%";
+                divisor.style.width = slider.value+"%";
+              }
+              window.onload = function() {
+                moveDivisor();
+              };
+            </script>
+          {{ else }}
+          <div class="comparison-alt my-4">
+            <img class="img-fluid w-100" src="{{ .Params.beforeImage | absURL }}" onerror="this.src='{{ .Params.beforeImageAlt | absURL }}'" alt="{{ .Params.AltText }}">
+          </div>
+          {{ end }}
+          <p class="h5 text-primary mb-4">{{ .Params.HighlightedText | safeHTML }}</p>
+          <div class="mb-5 content">{{ .Params.ShortDescription | markdownify }}</div>
+          <ul class="d-flex list-inline justify-content-between">
+            {{ range .Params.Buttons }}
+            <li class="list-inline-item w-100"><a href="{{ .URL }}" class="btn btn-outline-primary btn-responsive">{{ .btnText }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ partial "consult.html" . }}
+    </div>
+  </div>
+</section>
+
+{{ "<!-- content -->" | safeHTML }}
+<section class="section bg-gray content">
+  <div class="container">
+    <div class="row faq-list">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+{{ "<!-- /content -->" | safeHTML }}
+
+{{ end }}

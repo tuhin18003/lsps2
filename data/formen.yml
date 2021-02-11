@@ -1,0 +1,61 @@
+# slider
+slider:
+  # slider item
+  - bgImage : "images/slider/formen/menslide2.webp"
+    bgImageAlt : "images/slider/formen/menslide2.jpg"
+    title : "Chicago Cosmetic Surgery Options For Men"
+    content : "Great cosmetic surgeons understand that listening to a patient describe<br>
+               his body is the best tool available to them for delivering magnificient results."
+    btnText1 : "Schedule a Consultation"
+    URL1 : "/contact"
+    btnText2 : "Call Today"
+    URL2 : "3122029000"
+  
+  
+  # slider item
+  - bgImage : "images/slider/formen/menslide1.webp"
+    bgImageAlt : "images/slider/formen/menslide1.jpg"
+    title : "Chicago Cosmetic Surgery Options For Men"
+    content : "When possible, Dr. Horn looks for non-invasive solutions to <br/>
+              achieve the body sculpting results patients desire."
+    btnText1 : "Schedule a Consultation"
+    URL1 : "/contact"
+    btnText2 : "Call Today"
+    URL2 : "3122029000"
+
+
+# service Description
+serviceDescription:
+  image : "images/procedure/formen/formen-page.png"
+  imageAlt : "images/procedure/formen/formen-page.png"
+  altText : "Plastic surgery for men in Chicago"
+  title : "Surgical & Non-Surgical"
+  subTitle : "Cosmetic Procedures For Men"
+  content : "At our Chicago cosmetic surgery center location, Dr. Horn offers a variety of options for body contouring. Some of the procedures he performs include 
+            liposuction, body lift procedures, and tummy tucks (abdominoplasty), etc. These procedures will give you the body you’ve always wanted.
+            
+             Dr. Horn creates a customized 
+            treatment plan tailored to every patient’s individual requirement. Based on your individual goals, a custom treatment plan is outlined."
+  button :
+    btnText : "Contact Us"
+    URL : "/contact"
+
+# before and after procedure
+beforeAfter:
+  title : "Real Beautiful Results"
+  description : "Look & Feel Your Best"
+  before : "Before procedures"
+  after : "After procedures"
+  beforeImage: "images/procedure/formen/male-breast-before.webp"
+  beforeImageAlt: "images/procedure/formen/male-breast-before.jpg"
+  afterImage: "images/procedure/formen/male-breast-after.webp"
+  afterImageAlt: "images/procedure/formen/male-breast-after.jpg"
+
+#call to action
+cta:
+  title : "Have Any"
+  titleSpan : "Questions?"
+  content : "Led by renowned plastic surgeon Michael A. Horn, M.D., the Michael Horn Center for Cosmetic Surgery is dedicated to helping patients achieve their personal appearance goals."
+  button:
+    btnText : "Request Consultation"
+    URL : "/contact"

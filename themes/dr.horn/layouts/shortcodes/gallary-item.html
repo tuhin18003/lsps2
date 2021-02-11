@@ -1,0 +1,8 @@
+<div class="col-md-6 col-6 mb-6 mt-4">
+  <div class="gallery-item">
+    <img src="{{.Get `src` | absURL }}" onerror="this.src='{{.Get `src` | absURL }}'" alt="gallery-image" class="img-fluid w-100 mb-0">
+    <div class="hover-icon">
+      <a href="{{.Get `src` | absURL }}" data-gall="myGallery" class="venobox"><i class="ti-eye"></i></a>
+    </div>
+  </div>
+</div>

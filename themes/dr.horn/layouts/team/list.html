@@ -1,0 +1,205 @@
+{{ define "main" }}
+
+{{ partial "header.html" . }}
+
+{{ partial "page-title.html" . }}
+
+{{ "<!-- team leader -->" | safeHTML }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <img src="{{ .Site.Data.team.teamLeader.image | absURL }}" onerror="this.src='{{ .Site.Data.team.teamLeader.imageAlt | absURL }}'" class="img-fluid mb-4 mb-md-0" alt="{{ .Site.Data.team.teamLeader.altText }}">
+      </div>
+      <div class="col-md-7">
+        {{ with .Site.Data.team.teamLeader }}
+        <h2>{{ .title | safeHTML }}</h2>
+        <h4>{{ .name }}</h4>
+        <h4 class="mb-4">{{ .designation }}</h4>
+        <p>{{ .content | markdownify }}</p>
+        {{ end }}
+        <ul class="list-inline social-icon-alt">
+          {{ range .Site.Data.team.teamLeader.follow }}
+          <li class="list-inline-item"><a href="{{ .URL }}"><i class="{{ .icon }}"></i></a></li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /team leader -->" | safeHTML }}
+{{ "<!-- obituary-->" | safeHTML }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <img src="{{ .Site.Data.team.obituary.image | absURL }}" onerror="this.src='{{ .Site.Data.team.obituary.imageAlt | absURL }}'" class="img-fluid mb-4 mb-md-0" alt="{{ .Site.Data.team.obituary.altText }}">
+      </div>
+      <div class="col-md-7">
+        {{ with .Site.Data.team.obituary }}
+        <h2>{{ .title | safeHTML }}</h2>
+        <h4>{{ .name }}</h4>
+        <h4 class="mb-4">{{ .designation }}</h4>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /obituary -->" | safeHTML }}
+{{ "<!-- full team -->" | safeHTML }}
+<section class="bg-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <img src="{{ .Site.Data.team.fullTeam.image | absURL }}" onerror="this.src='{{ .Site.Data.team.fullTeam.imageAlt | absURL }}'" alt="{{.Site.Data.team.fullTeam.altText }}" class="img-fluid w-100">
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /full team -->" | safeHTML }}
+{{ "<!-- team member -->" | safeHTML }}
+<section class="section pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        {{ with .Site.Data.team.team1 }}
+        <h2>{{ .title | safeHTML }}</h2>
+        <p class="mb-5">{{ .description | safeHTML }}</p>
+        {{ end }}
+      </div>
+    </div>
+    <div class="row">
+      {{ range .Site.Data.team.team1.teamMember }}
+      <div class="col-lg-4 mb-4 col-sm-6 mb-5">
+        <img class="img-fluid w-100 mb-4" onerror="this.src='{{ .imageAlt | absURL }}'" src="{{ .image | absURL }}" alt="{{ .altText }}">
+        <h4>{{ .name }}</h4>
+        <p>{{ .designation }}</p>
+        <p>{{ .description | safeHTML }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ "<!-- /team member -->" | safeHTML }}
+{{ "<!-- team member -->" | safeHTML }}
+<section class="section pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        {{ with .Site.Data.team.team2 }}
+        <h2>{{ .title | safeHTML }}</h2>
+        <p class="mb-5">{{ .description | safeHTML }}</p>
+        {{ end }}
+      </div>
+    </div>
+    <div class="row">
+      {{ range .Site.Data.team.team2.teamMember }}
+        <div class="col-lg-4 mb-4 col-sm-6 mb-5">
+          <img class="img-fluid w-100 mb-4" onerror="this.src='{{ .imageAlt | absURL }}'" src="{{ .image | absURL }}" alt="{{ .altText }}">
+          <h4>{{ .name }}</h4>
+          <p>{{ .designation }}</p>
+          <p>{{ .description | safeHTML }}</p>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ "<!-- /team member -->" | safeHTML }}
+{{ "<!-- team member -->" | safeHTML }}
+<section class="section pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        {{ with .Site.Data.team.team3 }}
+        <h2>{{ .title | safeHTML }}</h2>
+        <p class="mb-5">{{ .description | safeHTML }}</p>
+        {{ end }}
+      </div>
+    </div>
+    <div class="row">
+      {{ range .Site.Data.team.team3.teamMember }}
+        <div class="col-lg-4 mb-4 col-sm-6 mb-5">
+          <img class="img-fluid w-100 mb-4" onerror="this.src='{{ .imageAlt | absURL }}'" src="{{ .image | absURL }}" alt="{{ .altText }}">
+          <h4>{{ .name }}</h4>
+          <p>{{ .designation }}</p>
+          <p>{{ .description | safeHTML }}</p>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ "<!-- /team member -->" | safeHTML }}
+{{ "<!-- team member -->" | safeHTML }}
+<section class="section pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        {{ with .Site.Data.team.team4 }}
+        <h2>{{ .title | safeHTML }}</h2>
+        <p class="mb-5">{{ .description | safeHTML }}</p>
+        {{ end }}
+      </div>
+    </div>
+    <div class="row">
+      {{ range .Site.Data.team.team4.teamMember }}
+        <div class="col-lg-4 mb-4 col-sm-6 mb-5">
+          <img class="img-fluid w-100 mb-4" onerror="this.src='{{ .imageAlt | absURL }}'" src="{{ .image | absURL }}" alt="{{ .altText }}">
+          <h4>{{ .name }}</h4>
+          <p>{{ .designation }}</p>
+          <p>{{ .description | safeHTML }}</p>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ "<!-- /team member -->" | safeHTML }}
+{{ "<!-- team member -->" | safeHTML }}
+<section class="section pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        {{ with .Site.Data.team.team5 }}
+        <h2>{{ .title | safeHTML }}</h2>
+        <p class="mb-5">{{ .description | safeHTML }}</p>
+        {{ end }}
+      </div>
+    </div>
+    <div class="row">
+      {{ range .Site.Data.team.team5.teamMember }}
+        <div class="col-lg-4 mb-4 col-sm-6 mb-5">
+          <img class="img-fluid w-100 mb-4" onerror="this.src='{{ .imageAlt | absURL }}'" src="{{ .image | absURL }}" alt="{{ .altText }}">
+          <h4>{{ .name }}</h4>
+          <p>{{ .designation }}</p>
+          <p>{{ .description | safeHTML }}</p>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ "<!-- /team member -->" | safeHTML }}
+{{ "<!-- manager2-->" | safeHTML }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <img src="{{ .Site.Data.team.teamLeader2.image | absURL }}" onerror="this.src='{{ .Site.Data.team.teamLeader2.imageAlt | absURL }}'" class="img-fluid mb-4 mb-md-0" alt="{{ .Site.Data.team.teamLeader2.altText }}">
+      </div>
+      <div class="col-md-7">
+        {{ with .Site.Data.team.teamLeader2 }}
+        <h2>{{ .title | safeHTML }}</h2>
+        <h4>{{ .name }}</h4>
+        <h4 class="mb-4">{{ .designation }}</h4>
+        <p>{{ .content | markdownify }}</p>
+        {{ end }}
+        <ul class="list-inline social-icon-alt">
+          {{ range .Site.Data.team.teamLeader2.follow }}
+          <li class="list-inline-item"><a href="{{ .URL }}"><i class="{{ .icon }}"></i></a></li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /team leader -->" | safeHTML }}
+
+{{ end }}

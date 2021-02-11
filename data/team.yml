@@ -1,0 +1,141 @@
+teamLeader:
+  image : "images/team/drhorn.jpg"
+  imageAlt : "images/team/drhorn.jpg"
+  altText : "dr. horn"
+  name : "Dr. Michael Horn"
+  designation : "Chicago Plastic Surgeon"
+  content : "A skilled and caring professional, Dr. Michael Horn provides exceptional plastic surgery that is truly tailored to the individual patient. Renowned for his aesthetic results, Dr. Horn helps his patients achieve their appearance goals by combining experience, talent, and the highest quality medical care.
+        <br>
+        <br>
+        Although Dr. Michael Horn is most well known for his perfected breast augmentation surgery, he also offers abdominoplasty, blepharoplasty, facelift, rhinoplasty, liposuction, and a comprehensive range of plastic surgery options, as well as non-surgical services like BOTOX® Cosmetic."
+
+teamLeader2:
+  image : "images/team/monica.jpg"
+  imageAlt : "images/team/monica.jpg"
+  altText : "Monica Ilea"
+  name : "Monica Ilea"
+  designation : "Office Manager"
+  content : "Monica joined the team at Michael Horn Center for Cosmetic Surgery in 2008 as an office manager.
+With over ten years of experience in the field, she is committed to fostering an environment in which all team members work together seamlessly to deliver exceptional service and care to patients.  
+She wears many hats throughout the day which include, overseeing the staff, managing the financial aspects of the practice, serving as the head of human resource and is an operations manager.
+As of 2018, Ilea took on an additional role as the business development manager for the practice. In this role, she is responsible for setting the marketing and business goals and oversees their implementation.
+On her spare time, she enjoys traveling, reading and most importantly spending time with her daughter and husband. "
+
+obituary:
+  image : "images/sharonthomas.jpg"
+  imageAlt : "images/sharonthomas.jpg"
+  altText : "Sharon Thomas"
+  name : "In Loving Memory"
+  designation : "Sharon Thomas - Aesthetician"
+  content : "It is with great sorrow that we provide this notice to inform patients of our aesthetician Sharon’s passing. Over the past couple of months Sharon has been battling cancer, and was not able to overcome it despite all efforts. She passed from the comfort of her son’s home, and with the presence of her family.
+        <br><br>
+        Sharon’s life’s work was helping people, whether it be patients, friends, or family in any way she could. Not only a talented medical aesthetic provider, but a confidant to anyone that came to know her. Her passion was her patients, and the pure happiness of helping her patients achieve their aesthetic goals brought joy to her life. 
+        <br><br>
+        She will not only be missed as a provider to The Michael Horn Center, but as a friend to all of us here. 
+        I invite you to contact me directly with any questions or concerns you may have, and know that my guidance would have been supported by Sharon wholeheartedly.
+        <br><br>
+        At this time her family has postponed funeral services, and has elected for a Celebration of Life, date to be set in the weeks to come. If you are interested in receiving information surrounding this, please email me directly at jessica@michaelhorncenter.com. 
+        <br><br>
+        Do not despair, for her memory lives on through us. <br>
+        Sincerely,<br>
+        The Michael Horn Center for Cosmetic Surgery Team"
+
+
+fullTeam:
+  image : "images/team/team.webp"
+  imageAlt : "images/team/team.jpg"
+  altText  : "The Micheal Horn Center Chicago plastic surgery team"
+
+team1:
+  title : "Nurse Injectors"
+  description : ""
+  teamMember:
+    # team member
+    - name : "Nicole Catalano"
+      image : "images/team/Nicole.webp"
+      imageAlt : "images/team/Nicole.jpg"
+      altText : "Aesthetic nurse injector at Chicago Cosmetic Surgery Center"
+      designation : "RN, BSN"
+      description : "After working in an ICU for 11 years, Nicole made the transition to aesthetic nurse injector.  The attention to detail she learned in the ICU has given her the ability to apply that skill artistically to treatments on her patients.  Her aim is to not only educate her patients, but also provide them with the tools needed to reach their aesthetic goals.  Nicole is passionate about her field and loves to help her patients look and feel beautiful.  When you look good you feel good!  Nicole prides herself on providing treatments that yield natural-looking, beautiful results. "
+
+  # team member
+    - name : "Carrie Bisgrove"
+      image : "images/team/carrie.webp"
+      imageAlt : "images/team/carrie.jpg"
+      altText : "Aesthetic nurse injector at Chicago Cosmetic Surgery Center"
+      designation : "RN, BSN"
+      description : "Carrie is a Nurse Injection Specialist who is devoted to each of her clients’ health and aesthetic desires. Along with her BSN, Carrie has broad emergency room care experience which is utilized every day in her client consultations. Carrie has created a welcoming environment with a goal of creating customized and realistic treatment plans aiming to enhance her clients’ natural beauty. <br><br>
+                    Carrie has several years of experience with injecting Juvéderm, Restylane and Kybella. She trains continuously with the Galderma and Allergan companies to stay up-to-date with the ever changing industry. Carrie is always seeking a new method to better deliver the product for her patients. Her goal is for her patients to look and feel confident as well as refreshed. On her personal time, Carrie enjoys vacationing with her husband and 4 children."
+    # team member
+    - name : "Cassie Krusich"
+      image : "images/team/cassie.webp"
+      imageAlt : "images/team/cassie.jpg"
+      altText : "Aesthetic nurse injector at Chicago Cosmetic Surgery Center"
+      designation : "MBA, LPN"
+      description : "Cassie is a familiar face in our office. She spent 8 years as our Botox, Juvederm & Voluma representative. She loved facial aesthetics so much, she pursued her Nursing licensure in order to perform the procedures herself and work directly with patients to help them achieve their beauty goals. While in school, she assisted us with our practice marketing, promotions and patient experience. She is now a certified nursing professional and we are happy to welcome her back to the practice as one of our aesthetic providers. 
+                    <br> <br>Cassie enjoys assisting patients to make subtle, yet impactful changes to their facial appearance to help them look like the best version of themselves. She is also a retired make-up artist, so don't be surprised if she offers you a pop of color to sport on your way out of the office, post procedure. 
+"
+team2:  
+    title : "Medical Estheticians"
+    description : ""
+    teamMember:
+      # team member
+      - name : "Irina Popova"
+        image : "images/team/Irina.webp"
+        imageAlt : "images/team/Irina.jpg"
+        altText : "Chicago aesthetician"
+        designation : "Aesthetician"
+        description : "Understanding the frustration of problematic skin from her teenage years, Irina is passionate about helping each of her clients achieve their unique skin care goals. A native of Moscow, Russia, Irina studied business management prior to pursuing her true passion for skincare. After graduating school for aesthetics in 2007, Irina has focused her learning on the medical side of aesthetics gaining experience with a med spa and plastic surgeon.
+<br><br>Her love for aesthetics continues to grow in an ever-changing industry. Irina prides herself on continually expanding her knowledge to include the latest advances in skincare technology.   Her primary goal is to address both the needs and concerns of each client, from custom facials to chemical peels and Microneedling.  Irina understands the need to educate each client on the treatment they are receiving so they feel comfortable and informed.
+<br><br>She has extensive experience with multiple lasers and administering deep laser treatments like, Profractional Lasers, C02 Lasers and MicroLaser Peels
+<br><br>Irina also has years of experience with laser hair removal, as well as scar and vein treatments. She also enjoys working with body contouring devices from radio frequency for skin tightening, to ultrasound for fat destruction.
+<br><br>It’s important to love what you do and Irina prides herself on providing state of the art skin care technology integrated with her passion for customizing skin care to achieve optimal results.
+"
+        
+      # team member
+      - name : "Erin Kazmer"
+        image : "images/team/Erin.webp"
+        imageAlt : "images/team/Erin.jpg"
+        altText : "Certified aesthetician at The Micheal Horn Center for Cosmetic Surgery"
+        designation : "Aesthetician"
+        description : "Erin is a certified Aesthetician at Dr. Michael Horn’s office. She graduated from Western Michigan University in 2006 with a Bachelors in Communications. Erin was in Consulting for over 4 years and then went on to achieve her passion in skin care. She attended Pivot Point and True Universities Advanced Medical Esthetics Program where she then began her career in the field of Esthetics. She has been working closely with Dr. Michael Horn for nearly 6 years. With her background and expertise she takes great pride in her relationships with her patients and assisting them with their skin care goals. While specializing in body contouring, Erin also works as a Clinical Trainer with Syneron-Candela. She travels around the country training physicians and their staff on the UltraShape Power, a non-invasive permanent fat destruction device that Dr. Michael Horn provides at the office as well."
+
+team3:
+  title : "Medical Assistant"
+  description : ""
+  teamMember:
+    # team member
+    - name : "Jessica"
+      image : "images/team/jessica-nurse.webp"
+      imageAlt : "images/team/jessica-nurse.jpg"
+      altText : "Aesthetic nurse injector at Chicago Cosmetic Surgery Center"
+      designation : "Registered Medical Assistant"
+      description : "Jessica joined The Michael Horn Center for Cosmetic Surgery in 2019 as a Registered Medical Assistant. Jessica has been in the plastic surgery industry for the past 9 years. She will follow your journey right along your side! Starting from your pre-op, checking in with you right after surgery and following up on all your post-operative care. She also, assists during any in-office surgical procedures. Alongside her dedication to the full-patient experience and her detailed background in cosmetic surgery, Jessica is here to deliver nothing short of extraordinary patient care. 
+When not working, Jessica loves to spend time with her family and is always coming up with new projects to work on around the house
+"
+
+team4:  
+    title : "Patient Coordinators"
+    description : ""
+    teamMember:
+      # team member
+      - name : "Jessica"
+        image : "images/team/jessica.webp"
+        imageAlt : "images/team/jessica.jpg"
+        altText : "Chicago aesthetician"
+        designation : "Patient Coordinator"
+        description : "Jessica joined The Michael Horn Center for Cosmetic Surgery in 2018 as a Patient Coordinator and is excited to be working with patients. She has previous experience in this role working in plastic surgery for 2 ½ years in Nashville, Tennessee. Jessica supports the care of our patients by assisting each individual through any of our cosmetic procedures starting from their first consultation date all the way through surgery. Her professionalism, dedication to the patient experience, and extensive knowledge within the industry allows Jessica to provide the patient with upmost care and comfort through any procedure. Her exceptional aptitude for building rapport with patients will ensure their time in our office is warm and customized to every individual specifically. 
+                      <br> <br>
+                    Jessica recently relocated from Charleston South Carolina with her husband Scott and dog Winston.  In her free time Jessica enjoys reading, scrapbooking, and traveling!"
+team5:  
+    title : "Front Desk Coordinators"
+    description : ""
+    teamMember:        
+      # team member
+      - name : "Maritza"
+        image : "images/team/maritza.webp"
+        imageAlt : "images/team/,aritza.jpg"
+        altText : "Chicago cosmetic surgeon patient coordinator"
+        designation : "Front Desk Coordinator"
+        description : "Maritza is our bi-lingual front desk coordinator. She plays a vital role in our office, serving as the doctor’s liaison between him and his patients. Maritza is the first contagious smile you see when you walk into our office and the last person to wish you a great day at the end of every visit. She will guide you through the process of scheduling your first consultation with Dr. Horn and aid in answering any questions. Maritza comes from an extensive background as a patient coordinator and front desk liaison in the dental industry for the past 5 years, as well as a background in Cosmetology as a certified eyelash extension artist. Maritza, strategically combines her skills taken from her experience in customer service and applies them to our office to provide the upmost attention to our patient’s needs, answer any and all questions to the best of her ability and provides exceptional service to our valued patients.   "
+        

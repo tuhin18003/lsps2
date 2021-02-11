@@ -1,0 +1,102 @@
+{{ define "main" }}
+
+{{ partial "nav-breast.html" . }}
+
+{{ partial "page-title.html" . }}
+
+
+<section class="section">
+	<div class="text-center mb-5">
+		{{ range .Site.Data.filterGallery.filterList }}
+		<a href="javascript:void(0)" class="btn btn-default" data-filter=".{{ .category | lower }}">{{ .name }}</a>
+		{{ end }}
+	</div>
+    <div class="gallery-container container">
+		<div class="row">
+			{{ $sPath := .Site.Data.filterGallery.galleryPath.baseFolder }}
+			{{ $absPath := .Site.Data.filterGallery.galleryPath.absPath }}
+			{{ $dirPath := (printf "/%s/%s/" $sPath $absPath ) }}
+			{{ range $elem_key, $elem_val := .Site.Data.filterGallery.galleryItem }}
+				{{ $elem_key := add $elem_key 1 }}
+				<div class="mix {{ .categories | lower }} col-md-4">
+					{{ if .imageFolder }}
+						{{ $pn := .imageFolder }}
+						{{ $path := printf "%s%s" $dirPath $pn }}
+						{{ $images := readDir $path }}
+						{{ range $imgNum, $elem :=  $images }}
+							{{ if .IsDir }} 
+								<div class="more-pic-{{ $elem_key }} hide">
+									<div class="more-pic-items">
+										<div class="col-lg-12">
+											<div class="mix childs-pic">
+												<div class="row">
+													{{ $morePicPath := printf "%s/%s" $path "more_pic" }}
+													{{ $moreImages := readDir $morePicPath }}
+													{{ range $mImgNum, $mElem :=  $moreImages }}
+														<div class="mix col-md-4">
+															<img class="img-fluid top-img" data-picid="{{ $elem_key }}" src="{{ printf "%s/%s/%s/%s" $absPath $pn "more_pic" .Name | absURL }}" alt="">
+														</div>
+													{{end }}
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							{{ else }}
+								<img class="img-fluid top-img" data-picid="{{ $elem_key }}" src="{{ printf "%s/%s/%s" $absPath $pn .Name | absURL }}" alt="">
+							{{ end }}
+						{{ end }}
+					{{ end }}
+					<div class="bullet-points">
+						<div class="row">
+							<div class="col-lg-6 bt">
+								<ul class="p1"> 
+									{{ range .binfo }}
+										<li>{{ . }}</li>
+									{{ end }}
+									
+								</ul>
+							</div>
+							<div class="col-lg-6 at">
+								<ul class="p2">
+									{{ range .ainfo }}
+										<li>{{ . }}</li>
+									{{ end }}
+									
+								</ul>
+							</div>
+
+						</div>
+
+						<div class="row">
+							<div class="col-lg-12">
+								<ul class="bp-child before-{{ $elem_key }}">
+									{{ range .binfo }}
+										<li>{{ . }}</li>
+									{{ end }}
+								</ul>
+								<ul class="bp-child after-{{ $elem_key }}">
+									{{ range .ainfo }}
+										<li>{{ . }}</li>
+									{{ end }}
+								</ul>
+							</div>
+	
+						</div>
+
+					</div>
+				</div>
+
+				<div class="more-pic-placeholder placeholder-id-{{ $elem_key }}" >
+					<!--do not remove this-->
+				</div>
+			{{ end }}
+		</div>
+	</div>
+</section>
+
+
+{{ "<!-- /gallery -->" | safeHTML }}
+
+{{ end }}
+

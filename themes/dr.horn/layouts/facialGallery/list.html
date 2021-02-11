@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+{{ partial "nav-face.html" . }}
+
+{{ partial "page-title.html" . }}
+
+{{ "<!-- gallery -->" | safeHTML }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      {{ range .Site.Data.face.gallery.galleryItem }}
+      <div class="col-md-4 col-6 mb-4">
+        <div class="gallery-item">
+          <img src="{{ .image | absURL }}" onerror="this.src='{{ .imageAlt | absURL }}'" alt="gallery-image" class="img-fluid w-100 mb-0">
+          <div class="hover-icon">
+            <a href="{{ .imageAlt | absURL }}" data-gall="myGallery" class="venobox"><i class="ti-eye"></i></a>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ "<!-- /gallery -->" | safeHTML }}
+
+{{ end }}

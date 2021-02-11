@@ -1,0 +1,93 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+
+            <div class="alert alert-warning item-not-found">
+                <i class="fa fa-warning"></i> The Patient information you are looking for hasn't found or removed! 
+                <a class="btn btn-sm float-right" href="{{ "breast-gallery" |absURL }}"><< Back to Gallery.</a> 
+            </div>
+            
+            <div class="item-main">
+                <div class="back-btn mb-20">
+                    <a class="btn btn-sm" href="{{ "breast-gallery" |absURL }}"><< Back to Gallery.</a> 
+                </div>
+                <div class="top-panel-wrapper">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-3">
+                            <div class="info-col">
+                                <h3 class="">
+                                    <i class="fa fa-info-circle"></i>
+                                    Patient Information:
+                                </h3>
+                                <div class="panel-body">
+                                    <p>
+                                        <strong>Age:</strong> <span class="cs-top-age">--</span> <br>
+                                        <strong>Gender:</strong> <span class="cs-top-gender">--</span> <br>
+                                    </p>
+                                    <p class="cs-top-details">---</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-3">
+                            <div class="info-col">
+                                <h3>
+                                    <i class="fa fa-stethoscope"></i>
+                                        Procedure:
+                                </h3>
+                                <div class="panel-body">
+                                    <div class="cs-procedures"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-sm-6 col-md-3">
+                            <div class="info-col">
+                                <h3>
+                                    <i class="fa fa-user-md"></i>
+                                    Profile:
+                                </h3>
+                                <div class="panel-body">
+                                    <h3 class="cs-doc-name">---</h3> 
+                                    <b>Average Rating:</b> 
+                                    <br class="hidden-sm hidden-md hidden-lg" />
+                                    <div class="doc-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p class="cs-doc-text">---</p> 
+                                    <ul class="cs-doc-links">--</ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-6 col-md-3">
+                            <a href="/about-us/our-team/">
+                                <img class="ba-provider-img img-responsive img-fluid" data-src="{{ "images/doctor.webp" | absURL }}">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 mb-20">
+                        <a href="#" class="pull-left btn btn-sm link-prev btn-disabled" > <i class="fa fa-long-arrow-left"></i> Previous </a>
+                        <a href="#" class="pull-right btn btn-sm link-next btn-disabled" >Next <i class="fa fa-long-arrow-right"></i> </a>
+                    </div>
+                </div>
+
+                <div class="panel-wrapper">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3 class="cs_more_pic_title">--</h3>
+                        </div>
+                        <div class="single-item-gallery"><!-- gallery item --></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

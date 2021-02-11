@@ -1,0 +1,240 @@
+{{ define "main" }}
+
+{{ partial "header.html" . }}
+
+{{ "<!-- slider -->" | safeHTML }}
+<section>
+  <div class="slider">
+    {{ range .Site.Data.formen.slider }}
+    <div class="slider-item bg-cover section overlay" style="background-image: url('{{ .bgImage | absURL }}'),url('{{ .bgImageAlt | absURL }}');">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <h1 class="text-white mb-4">{{ .title | safeHTML }}</h1>
+            <p class="text-white mb-4">{{ .content | safeHTML }}</p>
+            <a href="{{ .URL1 }}" class="btn btn-primary mr-3 mb-3 mb-sm-0">{{ .btnText1 }}</a>
+            <a href="tel:+1{{ .URL2 }}" class="btn btn-outline-light mb-3 mb-sm-0">{{ .btnText2 }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ "<!-- /slider -->" | safeHTML }}
+
+{{ "<!-- quality consult -->" | safeHTML }}
+<section class="consultation bg-gray">
+  <div class="container">
+    <div class="row py-5 px-4 bg-white position-relative zindex-1">
+      <div class="col-lg-6 col-xl-5">
+        <div class="pr-lg-5 border-dashed-right border-md-0">
+          {{ with .Site.Params.consult }}
+          <h2>{{ .title }}</h2>
+          <p>{{ .description | safeHTML }}</p>
+          {{ end }}
+        </div>
+      </div>
+      <div class="col-lg-6 ml-auto">
+          <form class="row" name="LSPS Consultation" method="POST" netlify-honeypot="bot-field" data-netlify="true" action="{{ .Site.Params.consult.formAction }}">
+              <div class="col-sm-6">
+                <input type="text" name="name" id="name" class="form-control mb-3" placeholder="Your name*" required>
+              </div>
+              <div class="col-sm-6">
+                <input type="email" name="email" id="email" class="form-control mb-3" placeholder="Your email*" required>
+              </div>
+              <div class="col-sm-6">
+                <input type="tel" name="phone" id="phone" class="form-control mb-3" placeholder="Phone number*" required>
+                <label style="display:none !important">Don’t fill this out if you're human: <input name="bot-field" /></label>
+              </div>
+              <div class="col-sm-6">
+                <select class="form-control mb-3" name="type" id="type">
+                  <option selected disabled>Service type*</option>
+                  {{ range .Site.Params.consult.serviceType }}
+                  <option value="{{ .name | lower | urlize }}" name="{{ .name | lower | urlize }}">{{ .name }}</option>
+                  {{ end }}
+                </select>
+              </div>
+              <div class="col-sm-6">
+                <textarea name="message" id="message" class="form-control form-control-sm mb-3 mb-sm-0" placeholder="Type your message*" required></textarea>
+              </div>
+              <div class="col-sm-6 align-self-end">
+                <button class="btn btn-primary btn-responsive" type="submit" value="send">Request A Consultation</button>
+              </div>
+            </form>
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /quality consult -->" | safeHTML }}
+
+{{ "<!-- service description -->" | safeHTML }}
+<section class="section bg-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img class="img-fluid" src="{{ .Site.Data.formen.serviceDescription.image | absURL }}" onerror="this.src='{{ .Site.Data.formen.serviceDescription.imageAlt | absURL }}'" alt="{{ .Site.Data.formen.serviceDescription.altText }}">
+      </div>
+      <div class="col-md-6 align-self-center">
+        {{ with .Site.Data.formen.serviceDescription }}
+        <h2>{{ .title }}</h2>
+        <h3 class="text-primary mb-4">{{ .subTitle }}</h3>
+        <p class="mb-4">{{ .content }}</p>
+        {{ end }}
+        <ul class="list-styled mb-5">
+          {{ range .Site.Data.homepage.vip.advantageList }}
+          <li class="text-dark mb-2">{{ .listItem }}</li>
+          {{ end }}
+        </ul>
+        {{ with .Site.Data.formen.serviceDescription.button }}
+        <a href="{{ .URL }}" class="btn btn-primary">{{ .btnText }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /service description -->" | safeHTML }}
+
+{{ "<!-- services -->" | safeHTML }}
+<section class="section service-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Our Cosmetic Services For Men</h2>
+        <p class="mb-5">Looking & Feeling Your Best Restores Confidence</p>
+      </div>
+      {{ range .Data.Pages }}
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card p-0 rounded-0 border-0 bg-white shadow">
+          <div class="card-header rounded-0 border-0 p-0">
+            <img src="{{ .Params.Image | absURL }}" onerror="this.src='{{ .Params.ImageAlt | absURL }}'" alt="{{ .Params.AltText }}" class="img-fluid w-100">
+          </div>
+          <div class="card-body text-center">
+            <h4 class="card-title"><a class="text-dark" href="{{ .Params.cardlink | safeHTML }}">{{ .Params.cardtitle | safeHTML }}</a></h4>
+            <p>{{ .Params.cardContent | safeHTML }}</p>
+            <a href="{{ .Params.cardlink | safeHTML }}" class="btn btn-primary mb-3">Learn More</a>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ "<!-- /services -->" | safeHTML }}
+
+{{ "<!-- before and after -->" | safeHTML }}
+<section class="section pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-12 mx-auto text-center">
+        {{ with .Site.Data.formen.beforeAfter }}
+        <h2 class="section-title">{{ .title }}</h2>
+        <p class="mb-5">{{ .description }}</p>
+        {{ end }}
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-md-2">
+        <p class="h6 text-dark mb-0 d-none d-md-block">{{ .Site.Data.formen.beforeAfter.before }}</p>
+      </div>
+      <div class="col-md-8 col-11 mx-auto">
+        <div id="comparison">
+          <figure style="background-image: url('{{ .Site.Data.formen.beforeAfter.afterImage | absURL }}'),url('{{ .Site.Data.formen.beforeAfter.afterImageAlt | absURL }}');">
+            <div id="handle"></div>
+            <div id="divisor" style="background-image: url('{{ .Site.Data.formen.beforeAfter.beforeImage | absURL }}'),url('{{ .Site.Data.formen.beforeAfter.beforeImageAlt | absURL }}');"></div>
+          </figure>
+          <input type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()">
+        </div>
+        <script>
+          var divisor = document.getElementById("divisor"),
+          handle = document.getElementById("handle"),
+          slider = document.getElementById("slider");
+          function moveDivisor() {
+            handle.style.left = slider.value+"%";
+            divisor.style.width = slider.value+"%";
+          }
+          window.onload = function() {
+            moveDivisor();
+          };
+        </script>
+      </div>
+      <div class="col-md-2">
+        <p class="h6 text-dark mb-0 d-none d-md-block">{{ .Site.Data.formen.beforeAfter.after }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /before and after -->" | safeHTML }}
+
+{{ "<!-- call to action -->" | safeHTML }}
+<section class="section bg-secondary pt-200 cta-bg translate-top bg-shape">
+  {{ with .Site.Data.formen.cta }}
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-lg-5 text-center text-lg-left mb-4 mb-lg-0">
+        <h2 class="section-title text-white">{{ .title }} <span>{{ .titleSpan }}</span></h2>
+        <p class="text-light mb-0">{{ .content }}</p>
+      </div>
+      <div class="col-lg-5 align-self-end text-lg-right text-center">
+        {{ with .button }}
+        <a href="{{ .URL }}" class="btn btn-primary">{{ .btnText }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</section>
+{{ "<!-- /call to action -->" | safeHTML }}
+
+{{ "<!-- doctor -->" | safeHTML }}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img class="img-fluid" src="{{ .Site.Data.homepage.doctor.image | absURL }}" onerror="this.src='{{ .Site.Data.homepage.doctor.imageAlt | absURL }}'" alt="{{ .Site.Data.homepage.doctor.altText }}">
+      </div>
+      <div class="col-md-6">
+        <div class="pl-md-4">
+          {{ with .Site.Data.homepage.doctor }}
+          <h2 class="text-primary mb-1">{{ .title }}</h2>
+          <h3 class="section-title">{{ .designation }}</h3>
+          <p class="mb-lg-5 mb-lg-3">{{ .content }}</p>
+          <h4 class="mb-3">Dedicated To Patient Satisfaction</h4>
+          <img class="img-fluid w-100 mb-lg-5 mb-3" src="{{ .certificates | absURL }}" onerror="this.src='{{ .certificatesAlt | absURL }}'" alt="certificates">
+          <span class="h3 text-dark d-block mb-lg-5 mb-3">{{ .phone }}</span>
+          {{ with .button }}
+          <a href="{{ .URL }}" class="btn btn-primary mb-3">{{ .btnText }}</a>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /doctor -->" | safeHTML }}
+
+{{ "<!-- vip membership -->" | safeHTML }}
+<section class="section bg-gray bg-shape">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-md-6 mb-4 mb-md-0">
+        {{ with .Site.Data.homepage.vip }}
+        <h2 class="section-title">{{ .title }}<br>
+          <span class="text-primary font-weight-light">{{ .titleSpan }}</span></h2>
+        <p class="mb-4">{{ .content }}</p>
+        {{ end }}
+        <ul class="list-styled">
+          {{ range .Site.Data.homepage.vip.advantageList }}
+          <li class="text-dark mb-2">{{ .listItem }}</li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="col-lg-5 col-md-6 align-self-end">
+        <img class="img-fluid" src="{{ .Site.Data.homepage.vip.card | absURL }}" onerror="this.src='{{ .Site.Data.homepage.vip.cardAlt | absURL }}'" alt="{{ .Site.Data.homepage.vip.altText }}">
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /vip membership -->" | safeHTML }}
+
+{{ end }}

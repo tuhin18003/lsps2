@@ -1,0 +1,395 @@
+# main service
+serviceItem:
+  - title : "Breast Surgery"
+    image : "images/service/breast.webp"
+    imageAlt : "images/service/breast.jpg"
+    altText : "Breast Augmentation Implants Lifts Reduction in Chicago"
+    bgLetter : "B"
+    content : "Breast Augmentation Chicago, Breast Lifts, Breast Implants, Breast Implant Replacement Or Breast Reduction Will Have You Looking Your Best "
+    btnText : "view more"
+    URL : "/breast"
+    
+  - title : "Body Sculpting & Surgery"
+    image : "images/service/body2.webp"
+    imageAlt : "images/service/body2.jpg"
+    altText : "Body Sculpting and Surgery Chicago"
+    bgLetter : "B"
+    content : "Whether Butt or Body Lift, Liposuction, Tummy Tuck or Mommy Makever, Our Chicago Location Will Have You Looking Your Best"
+    btnText : "view more"
+    URL : "/body"
+
+  - title : "Face Surgery"
+    image : "images/service/face.webp"
+    imageAlt : "images/service/face.jpg"
+    altText : "Facelift Surgery Chicago"
+    bgLetter : "F"
+    content : "Dr. Horn specializes in Facelift, Eyelid Lift, Rhinoplasty, Facial implants, Forehead Lift and Ear Surgery (Otoplasty). Give our Chicago Office A Call Today."
+    btnText : "view more"
+    URL : "/face"
+  
+  - title : "Medspa"
+    image : "images/service/medspa.webp"
+    imageAlt : "images/service/medspa.jpg"
+    altText : "Chicago Medspa Services"
+    bgLetter : "M"
+    content : "Look Your Best With Laser Hair Removal, Botox, Fillers & Body Contouring. Visit Our Newly Remodeled Chicago Location "
+    btnText : "view more"
+    URL : "/medspa"
+
+# cosmetic surgery
+cosmeticSurgery:
+  image : "images/cosmetic-surgery2.webp"
+  imageAlt : "images/cosmetic-surgery2.jpg"
+  altText : "cosmetic-surgery"
+  title : "Improve Your Appearance Chicago Cosmetic Surgery"
+  content : "Led by renowned <b>Chicago plastic surgeon</b> Michael A. Horn, M.D., the Michael Horn Center for Cosmetic Surgery is dedicated to helping patients achieve their personal appearance goals by providing the highest quality medical care tailored to their individual needs. <br> <br> 
+            Dr. Horn is known for achieving the finest aesthetic results and he specializes in using <b>breast augmentation surgery</b> to create a beautiful, shapely figure. 
+            In addition, he provides comprehensive <b>plastic surgery in Chicago</b> options, including <b>facelift</b>, <b>blepharoplasty</b>, <b>rhinoplasty</b>, <b>otoplasty</b>, <b>tummy tuck</b>, <b>liposuction</b>, 
+            <b>breast lifts</b> and more"
+  btnText : "contact us"
+  URL : "/contact"
+
+# temporary special
+temporaryspecial:
+  image : "images/tempspecial/emsculpt.webp"
+  imageAlt : "images/tempspecial/emsculpt.jpg"
+  altText : "Emsculpt Body Contouring"
+  title : "Limited Time Emsculpt Event - Limited Space - RSVP"
+  content : "There's very limited space for our annual Emsculpt event, RSVP by calling the office at <b>(312) 202-9000</b> or click the button below and send us a message indicating you'd like to attend the event.
+              <br>Build, Lift, tone & bring shape to your backside while taking a lunch break.  Call for details."
+  btnText : "contact us"
+  URL : "/contact" 
+  list:
+    - listItem : "25% Off Emsculpt"
+    - listItem : "Door Prizes Awarded"
+    - listItem : "Grand Prize $750"
+    
+
+# breast implants
+breastImplants : 
+  title : "Personalized <br> Breast Implants"
+  description : "The decision to enhance your appearance with breast augmentation is just the very first step on your journey. Dr. Horn and his entire staff are here to educate and make you completely comfortable throughout your experience at The Michael Horn Center for Cosmetic Surgery. 
+Dr. Horn is an opinion leader in the field of Brest Augmentation and considered one of the top Breast surgeons in all of Chicago.
+Whether breast augmentation / implants, breast lift or breast reduction is your desire, Dr. Michael Horn has the expertise to answer all your questions and deliver your desired result. 
+Dr. Horn listens intently to your vision of beauty, thoroughly explains all the options to achieve such results, and, depending on your goals, will choose the best breast technology and medical technique for you."
+  image : "images/breast-implants.webp"
+  imageAlt : "images/breast-implants.png"
+  altText : "breast-implants"
+  list:
+    - listItem : "Top Breast <br> Augmentation Surgeon"
+      URL : "/breast/breast-implants-augmentation/"
+    - listItem : "Over 10,000 Breast <br> Surgeries Performed"
+      URL : "/breast/"
+    - listItem : "Board Certified <br> Plastic Surgeon"
+      URL : "/about"
+
+
+# breast advantage
+breastadvantage:
+  title : "<center>Look & Feel Your Best With <br>Cosmetic <span>Breast</span> Procedures</center>"
+  list:
+    - listItem: "Breast Augmentation Surgery"
+      URL : "/breast/breast-implants-augmentation/"
+      
+    - listItem: "Breast Lift Surgery"
+      URL : "/breast/breast-lift"
+      
+    - listItem: "Breast Reduction Surgery"
+      URL : "/breast/breast-reduction"
+    
+    - listItem: "Saline vs Silicone Breast Implants"
+      URL : "/breast/saline-silicone-breast-implants/"
+
+# breastblock
+breastblock : 
+  image : "images/doctor.webp"
+  imageAlt : "images/doctor.jpg"
+  altText : "plastic surgeon chicago"
+  title : "<center>Artistic Breast Augmentation, Implants<br> Lifts & Reduction Results </center>"
+  designation : "<center>Top Rated Chicago Plastic Surgeon - Dr. Michael Horn M.D. <br>With Over 400 5 Star Reviews</center> "
+  content : "Full, shapely breasts can make any woman feel more feminine, beautiful, and confident. Breast augmentation, also known as breast enlargement with implants, is a safe and proven cosmetic surgery, and most patients who decide to have the procedure are delighted with the results.
+            At the Chicago practice of Dr. Michael Horn, breast implant surgery patients will find a dedicated and compassionate doctor who listens to his patients’ dreams and wishes. With an artist’s eye for symmetry and extensive experience in breast augmentation, Dr. Horn creates the physique that each patient desires.
+            <br><br>Dr. Horn is dedicated to providing exclusive care tailored to each patient’s individual needs. During a personal consultation with Dr. Horn, he will listen to your dreams and goals for breast implant surgery, and make recommendations for the type of implant surgery that will be appropriate for your body type and desired results.
+            Dr. Horn’s patients choose him for their breast implant surgery for his artistry, skill, and exceptional results. Patients describe him as approachable and he makes himself available throughout the breast augmentation process for any questions and concerns. Look through the cases of Chicago area patients in our breast augmentation before and after photo gallery to see some of the stunning results Dr. Horn has achieved for his very happy patients. "
+
+  button:
+    btnText: "Breast Procedure HomePage"
+    URL : "/breast"   
+    
+# Model Patients
+model:
+  title : "Our Real Patients"
+  description : "These Models are Actual Patients"
+  button :
+    btnText : "See All Results"
+    URL : "/casestudy"
+
+# doctor
+doctor : 
+  image : "images/doctor.webp"
+  imageAlt : "images/doctor.jpg"
+  altText : "Chicago Plastic Surgeon DR. Michael A. Horn"
+  title : "Michael A. Horn, M.D."
+  designation : "Chicago Plastic Surgeon "
+  content : "A skilled and caring professional, Dr. Michael Horn provides exceptional plastic surgery that is truly tailored to the individual patient. Renowned for his aesthetic results, Dr. Horn helps his patients achieve their desired appearance goals by combining vast experience, talent, continued education on the latest techniques while utilizing the most cutting edge and safe technology to achieve such remarkable results."
+  certificates : "images/about/reviews.webp"
+  certificatesAlt : "images/about/reviews.jpg"
+  phone : "(312) 202-9000"
+  button:
+    btnText: "Meet Dr. Horn"
+    URL : "/about"
+
+# gallery
+gallery:
+  title : "See Our Gallery of Beautiful Clients"
+  btnText : "View More"
+  URL : "#"
+
+
+# body advantage
+bodyadvantage:
+  title : "<center>Dr. Michael Horn Body Shaping & Sculpting Cosmetic Procedures</center>"
+  list:
+    - listItem: "Body Lift"
+      URL : "/body/body-lift"
+      
+    - listItem: "Liposuction"
+      URL : "/body/liposuction"  
+    
+    - listItem: "Mommy Makeover"
+      URL : "/body/mommy-makeover"
+      
+    - listItem: "Tummy Tuck"
+      URL : "/body/tummy-tuck"
+      
+    - listItem: "Vaginal Rejuvenation"
+      URL : "/body/vaginal-rejuvenation"
+
+    - listItem: "Emsculpt Body Contouring"
+      URL : "/body/emsculpt-body-contouring"
+
+      
+    
+# bodyblock
+bodyblock : 
+  image : "images/doctor.webp"
+  imageAlt : "images/doctor.jpg"
+  altText : "Body sculpting and plastic surgery in our Chicago Cosmetic Center "
+  title : "<center>Look and Feel Your Best With Body Shaping<br> Increase Your Self Confidence</center>"
+  designation : "<center></center> "
+  content : "Dr. Horn offers a variety of options for body contouring. Some of the procedures he performs include 
+              liposuction, body lift procedures, and tummy tucks (abdominoplasty). These procedures can be used to help his patients achieve the body shape 
+              they want. <br><br>Dr. Horn creates a customized treatment plan tailored to the patient’s individual requirements. Based on his patient’s goals, 
+              he may recommend a breast lift, facelift, rhinoplasty, breast augmentation, blepharoplasty or any other cosmetic procedure. He also offers a 
+              number of non-surgical solutions, such as vein treatment, BOTOX® Cosmetic, laser hair removal and more. Each of these solutions can enhance the 
+              results of other cosmetic surgeries. "
+  certificates : "images/certificates.webp"
+  certificatesAlt : "images/certificates.jpg"
+  phone : "(312) 202-9000"
+  button:
+    btnText: "Body Sculpting HomePage"
+    URL : "/body" 
+    
+# medspablock
+medspablock : 
+  image : "images/doctor.webp"
+  imageAlt : "images/doctor.jpg"
+  altText : "Chicago medspa services to remove wrinkles and the signs of aging"
+  title : "<center>State of The Art Medspa & Skin Services</center>"
+  designation : "<center></center> "
+  content : "Unlike most Med Spa’s, we are constantly evolving – adding services, technique and the latest technologies to deliver the best results in 
+            beauty and overall bodily health, so you can look and feel your very best. <br><br>
+            From injectables, facial rejuvenation, laser treatments, skin tightening, fat reduction and muscle building to laser hair removal, our clients 
+            leave our state of the art Med Spa facility feeling a renewed sense of confidence and beauty.
+"
+  certificates : "images/certificates.webp"
+  certificatesAlt : "images/certificates.jpg"
+  phone : "(312) 202-9000"
+  button:
+    btnText: "MedSpa HomePage"
+    URL : "/medspa"       
+
+# take advantage
+medspaadvantage:
+  title : "Take Advantage of Our State Of The Art <span>MedSpa</span> Offering Treatment For <span>Face & Body</span>"
+  list:
+    - listItem: "BBL Laser"
+      URL : "/medspa/bbl-laser/"
+
+    - listItem: "Botox Injections"
+      URL : "/medspa/botox-cosmetic/"
+      
+    - listItem: "Emsculpt Body"
+      URL : "/medspa/emsculpt-body-contouring/"
+
+    - listItem: "HCG Weight Loss Program"
+      URL : "/medspa/hcg-weightloss-program/"  
+      
+    - listItem: "Laser Hair Removal"
+      URL : "/medspa/laser-hair-removal/"
+      
+    - listItem: "Laser Wrinkle Reduction"
+      URL : "/medspa/laser-wrinkle-reduction/"
+      
+    - listItem: "Morpheus8"
+      URL : "/medspa/morpheus8/"
+    
+    - listItem: "MicroLaser Peel"
+      URL : "/medspa/microlaser-peel/"
+      
+    - listItem: "Profractional Laser"
+      URL : "/medspa/profractional-laser/"
+      
+    - listItem: "Restylane Fillers "
+      URL : "/medspa/restylane/"
+    
+    - listItem: "Skinpen® Microneedling"
+      URL : "/medspa/skinpen/"
+      
+    - listItem: "Ultrashape Fat Reduction"
+      URL : "/medspa/ultrashape/"
+      
+    - listItem: "Laser Vein Treatments"
+      URL : "/medspa/vein-treatments/"
+      
+    - listItem: "Venus Legacy & Freeze"
+      URL : "/medspa/venus-freeze/"
+      
+# testimonial
+testimonial:
+  title : "Chicago Plastic Surgery Reviews"
+  description : "Our Patients Say It Best"
+  sliderItem:
+    - title : "Amy T."
+      image : "images/testimonial/amy.webp"
+      imageAlt : "images/testimonial/amy.jpg"
+      altText : "best breast surgeon chicago testimonial from patient"
+      designation : "Yelp"
+      content : "If you are thinking about getting a breast augmentation I highly recommend Dr. Horn and his staff.  Five star experience, professional and friendly. Thank you again, you truly are an artist."
+      ratingStar : "five"
+      
+    - title : "Egle P."
+      image : "images/testimonial/egle.webp"
+      imageAlt : "images/testimonial/egle.jpg"
+      altText : "real patient chicago plastic surgeon review"
+      designation : "Yelp"
+      content : "I had breast augmentation w/ lift by Dr. Horn In Feb 2019 and I am extremely happy with the results. The staff have been very helpful and easy to communicate with. I am really pleased with the size I chose and Dr. Horn did an amazing job! The recovery process was quick and painless. He is truly an excellent plastic surgeon! I would definitely recommend Dr. Horn to anyone looking to get plastic surgery."
+      ratingStar : "five"
+      
+    - title : "Alyssa Holum"
+      image : "images/testimonial/alyssa.webp"
+      imageAlt : "images/testimonial/alyssa.jpg"
+      altText : "breast implant surgeon review of Dr. Michael Horn"
+      designation : "Google"
+      content : "I don’t ever write reviews, but my experience at the office today was so wonderful I felt it necessary! All the girls in the office are SO genuinely helpful and nice, making you feel right at home. Nicole was my nurse injector and I can’t speak highly enough of her. Not only did she do an absolutely beautiful job on my filler, she is one the most empathetic, kind health care practitioners I have met. She made me feel so comfortable and explained everything so thoroughly. 10/10   :)"
+      ratingStar : "five"
+      
+    - title : "Jessi Sanchez"
+      image : "images/testimonial/jessi.webp"
+      imageAlt : "images/testimonial/jessi.jpg"
+      altText : "dr. michael horn chicago reviews for his cosmetic surgery"
+      designation : "Google"
+      content : "Dr. Horn and his staff are all extremely nice and professional! I felt very comfortable in choosing Dr. Horn to do my procedure."
+      ratingStar : "five"
+      
+    - title : "Tori Vasquez"
+      image : "images/testimonial/tori.webp"
+      imageAlt : "images/testimonial/tori.jpg"
+      altText : "email of patient breast implant surgery chicago testimonial"
+      designation : "Google"
+      content : "Dr. Horn is the best surgeon in the Chicago area. My whole family has gone to him and I did not hesitate to go to him as well. I’ am loving my results and the whole staff has been great. Samantha has been awesome in helping with my recovery. The surgery staff was amazing as well. Has been such a great experience."
+      ratingStar : "five"
+
+# Promo video
+promoVideo:
+  videoThumb : "images/promo-video-thumb.webp"
+  videoThumbAlt : "images/promo-video-thumb.jpg"
+  altText : "Chicago plastic surgeon breast implant video guide"
+  videoURL : "https://www.youtube.com/watch?v=JC62HXuOxR4?autoplay=1"
+  title : "Do You Have Questions?"
+  subTitle : "Video Q&A With Dr. Horn"
+  content : "Dr. Horn is known for achieving the finest aesthetic results and he specializes in using breast augmentation surgery to create a beautiful, shapely figure. In addition, he provides comprehensive plastic surgery options, including facelift, blepharoplasty, rhinoplasty, otoplasty, tummy tuck, liposuction, breast lift, and more"
+  button:
+    btnText : "Watch All Video Q&A"
+    URL : "/video-qa"
+
+# before and after procedure
+beforeAfter:
+  title : "Real Beautiful Results"
+  description : ""
+  before : "Before procedures"
+  after : "After procedures"
+  beforeImage: "images/procedure/breast/breastaugmentation-before.webp"
+  beforeImageAlt: "images/procedure/breast/breastaugmentation-before.jpg"
+  afterImage: "images/procedure/breast/breastaugmentation-after.webp"
+  afterImageAlt: "images/procedure/breast/breastaugmentation-after.jpg"
+
+# vip membership
+vip:
+  title : "Take Advantage of Our"
+  titleSpan : "MedSpa VIP Membership"
+  content : "Top Rated State of The Art MedSpa Located in Gold Coast Chicago"
+  card : "images/card.webp"
+  cardAlt : "images/card.png"
+  altText : "Chicago medspa membership and discount"
+  advantageList:
+    - listItem : "15% OFF All Injectables"
+    - listItem : "15% OFF All Medical Spa Services"
+    - listItem : "15% OFF Retail Products"
+    - listItem : "Complimentary Skin Analysis"
+    - listItem : "Membership - Contact Office For Details"
+
+# latest news
+blog : 
+  title : "Recent Articles"
+  description : "Stay Up To Date With Our Publications"
+
+# partners logo
+partners:
+  - logo : "images/partners/partner-1.png"
+    altText : "Dr. Michel Horn is the Top Rated Plastic Surgeon Chicago"
+    
+  - logo : "images/partners/partner-2.png"
+    altText : "American Board of Plastic Surgery"
+    
+  - logo : "images/partners/partner-3.png"
+    altText : "American Society of Plastic Surgeons"
+    
+  - logo : "images/partners/partner-4.png"
+    altText : "Top Doctor Award from Real Self badge"
+    
+  - logo : "images/partners/partner-5.png"
+    altText : "American Board of Plastic Surgery"
+
+  - logo : "images/partners/partner-6.png"
+    altText : "Top Doctor Award from Real Self badge"
+    
+  - logo : "images/partners/partner-7.png"
+    altText : "Illinois Society of Plastic Surgeon"
+
+
+# footer
+footer:
+  title : "Chicago's Top Rated Plastic Surgeon - Dr. Michael Horn M.D."
+  address : "60 East Delaware Place,  15th Floor  Chicago, IL 60611"
+  phone : "(312) 202-9000"
+  email : "info@michaelhorncenter.com"
+  copyright : "Dr. Michael Horn, M.D. All Rights Reserved."
+  sitemap : "Privacy Policy  Sitemap Dr. Michael Horn M.D."
+  badge: "/images/badge5.png"
+  altText: "Top Rated Chicago Breast Surgeon Dr. Micheal Horn MD"
+  socialIcon : 
+    - icon : "ti-facebook" # Use themefy icon
+      URL : "https://www.facebook.com/DrMichaelHorn"
+    
+    - icon : "ti-instagram" # Use themefy icon
+      URL : "https://www.instagram.com/drmichaelhorn"
+      
+    - icon : "ti-twitter-alt" # Use themefy icon
+      URL : "https://twitter.com/DrMichaelAHorn"
+      
+    - icon : "ti-youtube" # Use themefy icon
+      URL : "https://www.youtube.com/channel/UCw1OWczDcbuCYveSyPPKFzA"
+      
+    - icon : "ti-google" # Use themefy icon
+      URL : "https://www.google.com/search?q=dr+michael+horn+chicago&rlz=1C1CHBF_enUS815US815&oq=dr+michael+horn+chicago&aqs=chrome..69i57j0l3j69i61j69i65j69i60j69i65.454j0j9&sourceid=chrome&ie=UTF-8#lrd=0x880fd352334f4ab1:0x52a1d40cdf9b950,1,,,"

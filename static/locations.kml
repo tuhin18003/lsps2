@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+	<Document>
+		<name>Locations for Dr. Michael Horn, M.D. - Plastic Surgeon Chicago.</name>
+		<atom:author>
+			<atom:name>Dr. Michael Horn</atom:name>
+		</atom:author>
+		<atom:link rel="related" href="https://www.lakeshoreplasticsurgery.com" />
+		<Folder>
+			<Placemark>
+				<name><![CDATA[Dr. Michael Horn, M.D. - Plastic Surgeon Chicago]]></name>
+				<address><![CDATA[60 E. Delaware Pl Ste: 15,, Chicago, IL, 60611, United States]]></address>
+				<phoneNumber><![CDATA[(312) 202-9000]]></phoneNumber>
+				<description><![CDATA["Led by renowned Chicago plastic surgeon Michael A. Horn, M.D., the Michael Horn Center for Cosmetic Surgery, located in the Gold Coast, is dedicated to helping patients achieve their personal appearance goals by providing the highest quality cosmetic surgery / medical care tailored to their individual needs. Dr. Horn is known for achieving the finest aesthetic results and he specializes in using breast implants, breast augmentation and breast lift surgery to create a beautiful, shapely figure.]]></description>
+				<Point>
+					<coordinates>-87.6264095,41.899487,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+	</Document>
+</kml>

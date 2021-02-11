@@ -1,0 +1,74 @@
+filterList:
+  
+  - name : "Breast Augmentation"
+    category : "cat-b"
+  
+  - name : "Breast Augmentation w/ Lift"
+    category : "cat-a"
+    
+  - name : "Breast Lift"
+    category : "cat-c"
+
+  - name : "Breast Reduction"
+    category : "cat-d"
+
+
+galleryPath:
+    baseFolder : "static"
+    absPath : "images/breastgallery"
+
+
+galleryItem:
+  - categories : "cat-a cat-b cat-c"
+    imageFolder : "a"
+    altText : "Natural Breast lift surgery Chicago"
+    binfo : [ bp1, bp2, bp3, bp4, bp5, bp6 ]
+    ainfo : [ bpf1, bpf2, bpf3, bpf4, bpf5, bpf6]
+
+  - categories : "cat-a cat-b"
+    imageFolder : "b"
+    altText : "Gummy bear breast implants, Chicago Surgeon"
+    binfo : ['string1', 'string2', 'string3', 'string4', 'string5',  'string6']
+    ainfo : [ 'astring1', 'astring2', 'astring3', 'astring4', 'astring5',  'string6']
+    
+  - categories : "cat-b"
+    imageFolder : "c"
+    altText : "Augmentation of the breasts"
+    binfo : ['string1', 'string2', 'string3', 'string4', 'string5',  'string6']
+    ainfo : [ 'astring1', 'astring2', 'astring3', 'astring4', 'astring5',  'string6']
+    
+  - categories : "cat-c"
+    altText : "breast reduction discussion at Chicago cosmetic surgery center"  
+    imageFolder : "c"
+    binfo : ['string1', 'string2', 'string3', 'string4', 'string5',  'string6']
+    ainfo : [ 'astring1', 'astring2', 'astring3', 'astring4', 'astring5',  'string6']
+
+  - categories : "cat-d"
+    imageFolder : "d"
+    altText : "woman has sagging breasts and tells doctor she wants them reduced and lifted"
+    binfo : ['string1', 'string2', 'string3', 'string4', 'string5',  'string6']
+    ainfo : [ 'astring1', 'astring2', 'astring3', 'astring4', 'astring5',  'string6']
+    
+  - categories : "cat-d"
+    imageFolder : "e"
+    altText : "doctor is talking to patient about what she can expect during and after breast reduction surgery"
+    binfo : ['string1', 'string2', 'string3', 'string4', 'string5',  'string6']
+    ainfo : [ 'astring1', 'astring2', 'astring3', 'astring4', 'astring5',  'string6']
+  
+  - categories : "cat-c"
+    altText : "breast reduction discussion at Chicago cosmetic surgery center"  
+    imageFolder : "c"
+    binfo : ['string1', 'string2', 'string3', 'string4', 'string5',  'string6']
+    ainfo : [ 'astring1', 'astring2', 'astring3', 'astring4', 'astring5',  'string6']
+
+  - categories : "cat-d"
+    imageFolder : "d"
+    altText : "woman has sagging breasts and tells doctor she wants them reduced and lifted"
+    binfo : ['string1', 'string2', 'string3', 'string4', 'string5',  'string6']
+    ainfo : [ 'astring1', 'astring2', 'astring3', 'astring4', 'astring5',  'string6']
+    
+  - categories : "cat-d"
+    imageFolder : "e"
+    altText : "doctor is talking to patient about what she can expect during and after breast reduction surgery"
+    binfo : ['string1', 'string2', 'string3', 'string4', 'string5',  'string6']
+    ainfo : [ 'astring1', 'astring2', 'astring3', 'astring4', 'astring5',  'string6']

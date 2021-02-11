@@ -1,0 +1,833 @@
+baseURL = "https://www.lakeshoreplasticsurgery.com"
+languageCode = "en-us"
+title = "Top Rated Chicago Plastic Surgeon - Cosmetic Surgery - Dr. Horn"
+theme = "dr.horn"
+summaryLength = "10"
+paginate = 6
+
+# Plugins
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "plugins/bootstrap/bootstrap.min.css"
+  [[params.plugins.css]]
+  URL = "plugins/slick/slick.css"
+  [[params.plugins.css]]
+  URL = "plugins/themify-icons/themify-icons.css"
+  [[params.plugins.css]]
+  URL = "plugins/venobox/venobox.css"
+  [[params.plugins.css]]
+  URL = "plugins/font-awesome/css/font-awesome.min.css"
+  
+
+
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "plugins/jQuery/jquery.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/bootstrap/bootstrap.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/slick/slick.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/venobox/venobox.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/isotope-masonary/isotope-3.0.4.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/mixitup/mixitup.min.js"
+  
+
+# navigation
+[menu]
+    
+  [[menu.main]]
+  name = "About"
+  URL = "/about"
+  weight = 2
+
+    [[menu.main]]
+    parent = "About"
+    name = "Dr. Horn"
+    URL = "/about"
+    
+    [[menu.main]]
+    parent = "About"
+    name = "Team"
+    URL = "/team"
+
+    [[menu.main]]
+    parent = "About"
+    name = "Faqs"
+    URL = "/faqs"
+
+    [[menu.main]]
+    parent = "About"
+    name = "Blog"
+    URL = "/blog"
+    
+    [[menu.main]]
+    parent = "About"
+    name = "Reviews"
+    URL = "/reviews"
+
+  [[menu.main]]
+  name = "Procedures"
+  URL = "/service"
+  weight = 3
+
+    [[menu.main]]
+    parent = "Procedures"
+    name = "Breast"
+    URL = "/breast"
+    weight = 1
+
+    [[menu.main]]
+    parent = "Procedures"
+    name = "Face"
+    URL = "/face"
+    weight = 3
+
+    [[menu.main]]
+    parent = "Procedures"
+    name = "Body"
+    URL = "/body"
+    weight = 2
+
+    [[menu.main]]
+    parent = "Procedures"
+    name = "Medspa"
+    URL = "/medspa"
+    weight = 4
+    
+    
+  [[menu.main]]
+  name = "Gallery"
+  URL = "#"
+  weight = 4
+
+    [[menu.main]]
+    parent = "Gallery"
+    name = "Breast Gallery"
+    URL = "/breast-gallery"
+    weight = 1
+
+    [[menu.main]]
+    parent = "Gallery"
+    name = "Blepharoplasty Gallery"
+    URL = "/bodygallery/blepharoplasty"
+    weight = 2
+
+    [[menu.main]]
+    parent = "Gallery"
+    name = "Brachioplasty Gallery"
+    URL = "/bodygallery/brachioplasty"
+    weight = 3
+
+    [[menu.main]]
+    parent = "Gallery"
+    name = "Liposuction Gallery"
+    URL = "/bodygallery/liposuction"
+    weight = 4
+
+    [[menu.main]]
+    parent = "Gallery" 
+    name = "Otoplasty Gallery"
+    URL = "/facialgallery/otoplasty"
+    weight = 5
+
+    [[menu.main]]
+    parent = "Gallery"
+    name = "Rhinoplasty Gallery"
+    URL = "/facialgallery/rhinoplasty"
+    weight = 6
+
+    [[menu.main]]
+    parent = "Gallery"
+    name = "Tummy Tuck Gallery"
+    URL = "/bodygallery/tummy-tuck"
+    weight = 7
+
+    [[menu.main]]
+    parent = "Gallery"
+    name = "Face-Neck Lift Gallery"
+    URL = "/facialgallery/face-neck-lift"
+    weight = 8
+
+    [[menu.main]]
+    parent = "Gallery"
+    name = "Rhinoplasty Gallery"
+    URL = "/facialgallery/rhinoplasty"
+    weight = 9
+    
+  [[menu.main]]
+  name = "For Men"
+  URL = "/formen"
+  weight = 6
+  
+  [[menu.main]]
+  name = "Patient Login"
+  URL = "https://www.mypatientvisit.com/#/login?practiceID=YEOFXY" 
+  weight = 7
+
+  [[menu.main]]
+  name = "Financing"
+  URL = "/financing"
+  weight = 8
+
+  [[menu.main]]
+  name = "Consultation-Contact"
+  URL = "/contact"
+  weight = 9
+  
+  
+# breast navigation
+
+  [[menu.breast]]
+  name = "About"
+  URL = "/about"
+  weight = 2
+
+    [[menu.breast]]
+    parent = "About"
+    name = "Dr. Horn"
+    URL = "/about"
+    
+    [[menu.breast]]
+    parent = "About"
+    name = "Team"
+    URL = "/team"
+
+    [[menu.breast]]
+    parent = "About"
+    name = "Faqs"
+    URL = "/faqs"
+
+    [[menu.breast]]
+    parent = "About"
+    name = "Blog"
+    URL = "/blog"
+
+    [[menu.breast]]
+    parent = "About"
+    name = "Reviews"
+    URL = "/reviews"
+
+  [[menu.breast]]
+  name = "Breast Services"
+  URL = "/breast"
+  weight = 4
+    
+    [[menu.breast]]
+    parent = "Breast Services"
+    name = "Menu of Breast Procedures"
+    URL = "/breast"
+    weight = 1
+
+    [[menu.breast]]
+    parent = "Breast Services"
+    name = "Breast Augmentation"
+    URL = "/breast/breast-implants-augmentation/"
+    weight = 2
+
+    [[menu.breast]]
+    parent = "Breast Services"
+    name = "Saline or Silcone Implants"
+    URL = "/breast/saline-silicone-breast-implants/"
+    weight = 3
+
+    [[menu.breast]]
+    parent = "Breast Services"
+    name = "Breast Lift"
+    URL = "/breast/breast-lift"
+    weight = 4
+
+    [[menu.breast]]
+    parent = "Breast Services"
+    name = "Breast Reduction"
+    URL = "/breast/breast-reduction"
+    weight = 5
+
+  [[menu.breast]]
+  name = "Gallery"
+  URL = "/breast-gallery"
+  weight = 5
+
+  [[menu.breast]]
+  name = "Procedures"
+  URL = "/service"
+  weight = 6
+
+    [[menu.breast]]
+    parent = "Procedures"
+    name = "Face"
+    URL = "/face"
+    weight = 3
+
+    [[menu.breast]]
+    parent = "Procedures"
+    name = "Body"
+    URL = "/body"
+    weight = 2
+
+    [[menu.breast]]
+    parent = "Procedures"
+    name = "Medspa"
+    URL = "/medspa"
+    weight = 4
+  
+  [[menu.breast]]
+  name = "For men"
+  URL = "/formen"
+  weight = 7 
+  
+  [[menu.breast]]
+  name = "patient login"
+  URL = "https://www.mypatientvisit.com/#/login?practiceID=YEOFXY"
+  weight = 8
+
+  [[menu.breast]]
+  name = "Financing"
+  URL = "/financing"
+  weight = 9
+
+  [[menu.breast]]
+  name = "Consultation-Contact"
+  URL = "/contact"
+  weight = 10
+  
+# face navigation
+  [[menu.face]]
+  name = "About"
+  URL = "/about"
+  weight = 2
+
+    [[menu.face]]
+    parent = "About"
+    name = "Dr. Horn"
+    URL = "/about"
+    
+    [[menu.face]]
+    parent = "About"
+    name = "Team"
+    URL = "/team"
+
+    [[menu.face]]
+    parent = "About"
+    name = "Faqs"
+    URL = "/faqs"
+
+    [[menu.face]]
+    parent = "About"
+    name = "Blog"
+    URL = "/blog"
+
+    [[menu.face]]
+    parent = "About"
+    name = "Reviews"
+    URL = "/reviews"
+
+  [[menu.face]]
+  name = "Face Services"
+  URL = "/face"
+  weight = 3
+    
+    [[menu.face]]
+    parent = "Face Services"
+    name = "Menu of Facial Services"
+    URL = "/face/"
+    weight = 1
+    
+    [[menu.face]]
+    parent = "Face Services"
+    name = "Ear Surgery Otoplasty"
+    URL = "/face/ear-surgery-otoplasty/"
+    weight = 2
+
+    [[menu.face]]
+    parent = "Face Services"
+    name = "Eyelid Lift"
+    URL = "/face/eyelid-lift/"
+    weight = 3
+
+    [[menu.face]]
+    parent = "Face Services"
+    name = "Facelift"
+    URL = "/face/facelift/"
+    weight = 5
+
+    [[menu.face]]
+    parent = "Face Services"
+    name = "Eyelid Lift"
+    URL = "/face/eyelid-lift/"
+    weight = 4
+
+    [[menu.face]]
+    parent = "Face Services"
+    name = "Facial Implants"
+    URL = "/face/facial-implants/"
+    weight = 6
+
+    [[menu.face]]
+    parent = "Face Services"
+    name = "Forehead Lift"
+    URL = "/face/forehead-lift/"
+    weight = 7
+
+    [[menu.face]]
+    parent = "Face Services"
+    name = "Rhinoplasty"
+    URL = "/face/rhinoplasty/"
+    weight = 8
+      
+
+  [[menu.face]]
+  name = "Gallery"
+  URL = "/facialgallery"
+  weight = 5
+
+    [[menu.face]]
+    parent = "Gallery"
+    name = "Blepharoplasty"
+    URL = "/facialgallery/blepharoplasty"
+
+    [[menu.face]]
+    parent = "Gallery"
+    name = "Face-Neck Lift"
+    URL = "/facialgallery/face-neck-lift"
+
+     [[menu.face]]
+    parent = "Gallery"
+    name = "Otoplasty"
+    URL = "/facialgallery/otoplasty"
+    
+    [[menu.face]]
+    parent = "Gallery"
+    name = "Rhinoplasty"
+    URL = "/facialgallery/rhinoplasty"
+
+  [[menu.face]]
+  name = "Procedures"
+  URL = "/service"
+  weight = 6
+
+    [[menu.face]]
+    parent = "Procedures"
+    name = "Breast"
+    URL = "/breast"
+    weight = 1
+
+    [[menu.face]]
+    parent = "Procedures"
+    name = "Body"
+    URL = "/body"
+    weight = 2
+
+    [[menu.face]]
+    parent = "Procedures"
+    name = "Medspa"
+    URL = "/medspa"
+    weight = 3  
+
+  [[menu.face]]
+  name = "For Men"
+  URL = "/formen"  
+  weight = 7
+
+  [[menu.face]]
+  name = "Patient Login"
+  URL = "https://www.mypatientvisit.com/#/login?practiceID=YEOFXY"  
+  weight = 8
+
+  [[menu.face]]
+  name = "Financing"
+  URL = "/financing"  
+  weight = 9
+
+  [[menu.face]]
+  name = "Consultation-Contact"
+  URL = "/contact"  
+  weight = 10
+
+ 
+# body navigation
+  [[menu.body]]
+  name = "About"
+  URL = "/about"
+  weight = 2
+
+    [[menu.body]]
+    parent = "About"
+    name = "Dr. Horn"
+    URL = "/about"
+    
+    [[menu.body]]
+    parent = "About"
+    name = "Team"
+    URL = "/team"
+
+    [[menu.body]]
+    parent = "About"
+    name = "Faqs"
+    URL = "/faqs"
+
+    [[menu.body]]
+    parent = "About"
+    name = "Blog"
+    URL = "/blog"
+
+    [[menu.body]]
+    parent = "About"
+    name = "Reviews"
+    URL = "/reviews"
+     
+
+  [[menu.body]]
+  name = "Body Services"
+  URL = "/body"
+  weight = 3
+    
+    [[menu.body]]
+    parent = "Body Services"
+    name = "Menu of body services"
+    URL = "/body/"
+    weight = 1
+
+    [[menu.body]]
+    parent = "Body Services"
+    name = "Body Lift Contouring"
+    URL = "/body/body-lift/"
+    weight = 2
+
+    [[menu.body]]
+    parent = "Body Services"
+    name = "Emsculpt Body Contouring"
+    URL = "/body/emsculpt-body-contouring/"
+    weight = 3
+
+    [[menu.body]]
+    parent = "Body Services"
+    name = "Liposuction"
+    URL = "/body/liposuction/"
+    weight = 4
+
+    [[menu.body]]
+    parent = "Body Services"
+    name = "mommy makeover"
+    URL = "/body/mommy-makeover/"
+    weight = 5
+
+    [[menu.body]]
+    parent = "Body Services"
+    name = "Tummy Tuck"
+    URL = "/body/tummy-tuck/"
+    weight = 6
+
+    [[menu.body]]
+    parent = "Body Services"
+    name = "Vaginal Rejuvenation - Labiaplasty"
+    URL = "/body/vaginal-rejuvenation/"
+    weight = 7
+    
+
+  [[menu.body]]
+  name = "Gallery"
+  URL = "/bodyGallery"
+  weight = 4
+
+    [[menu.body]]
+    parent = "Gallery"
+    name = "Blepharoplasty"
+    URL = "/bodyGallery/blepharoplasty"
+
+    [[menu.body]]
+    parent = "Gallery"
+    name = "Brachioplasty"
+    URL = "/bodyGallery/brachioplasty"
+
+    [[menu.body]]
+    parent = "Gallery"
+    name = "Liposuction"
+    URL = "/bodyGallery/liposuction"
+
+    [[menu.body]]
+    parent = "Gallery"
+    name = "Tummy Tuck"
+    URL = "/bodyGallery/tummy-tuck"
+
+  [[menu.body]]
+  name = "Procedures"
+  URL = "/service"
+  weight = 5
+
+    [[menu.body]]
+    parent = "Procedures"
+    name = "Breast"
+    URL = "/breast"
+    weight = 1
+
+    [[menu.body]]
+    parent = "Procedures"
+    name = "Face"
+    URL = "/face"
+    weight = 2
+
+    [[menu.body]]
+    parent = "Procedures"
+    name = "Medspa"
+    URL = "/medspa"
+    weight = 3  
+  
+  [[menu.body]]
+  name = "For Men"
+  URL = "/formen"
+  weight = 6
+  
+  [[menu.body]]
+  name = "Patient Login"
+  URL = "https://www.mypatientvisit.com/#/login?practiceID=YEOFXY"
+  weight = 7
+
+  [[menu.body]]
+  name = "Financing"
+  URL = "/financing"
+  weight = 8
+
+  [[menu.body]]
+  name = "Consultation-Contact"
+  URL = "/contact"
+  weight = 9
+    
+
+# medspa navigation
+  [[menu.medspa]]
+  name = "About"
+  URL = "/about"
+  weight = 2
+
+    [[menu.medspa]]
+    parent = "About"
+    name = "Dr. Horn"
+    URL = "/about"
+    
+    [[menu.medspa]]
+    parent = "About"
+    name = "Team"
+    URL = "/team"
+
+    [[menu.medspa]]
+    parent = "About"
+    name = "Faqs"
+    URL = "/faqs"
+
+    [[menu.medspa]]
+    parent = "About"
+    name = "Blog"
+    URL = "/blog"
+
+    [[menu.medspa]]
+    parent = "About"
+    name = "Reviews"
+    URL = "/reviews"
+
+  [[menu.medspa]]
+  name = "MedSpa Services"
+  URL = "/medspa"
+  weight = 3
+    
+    [[menu.medspa]]
+    parent = "MedSpa Services"
+    name = "Menu of spa services"
+    URL = "/medspa/"
+    weight = 1
+
+    [[menu.medspa]]
+    parent = "MedSpa Services"
+    name = "BBL Laser"
+    URL = "/medspa/bbl-laser/"
+    weight = 2
+
+    [[menu.medspa]]
+    parent = "MedSpa Services"
+    name = "Botox Cosmetic"
+    URL = "/medspa/botox-cosmetic/"
+    weight = 3
+
+    [[menu.medspa]]
+    parent = "MedSpa Services"
+    name = "Dermal Fillers"
+    URL = "/medspa/dermal-fillers/"
+    weight = 4
+
+    [[menu.medspa]]
+    parent = "MedSpa Services"
+    name = "Emsculpt Body Contouring"
+    URL = "/body/emsculpt-body-contouring"
+    weight = 6
+
+    [[menu.medspa]]
+    parent = "MedSpa Services"
+    name = "HCG Weight Loss Program"
+    URL = "/medspa/hcg-weightloss-program/"
+    weight = 6
+    
+
+    [[menu.medspa]]
+    parent = "MedSpa Services"
+    name = "Laser Hair Removal"
+    URL = "/medspa/laser-hair-removal/"
+    weight = 7
+
+    [[menu.medspa]]
+    parent = "MedSpa Services"
+    name = "Laser Wrinkle Reduction"
+    URL = "/medspa/laser-wrinkle-reduction/"
+    weight = 9
+
+    [[menu.medspa]]
+    parent = "MedSpa Services"
+    name = "Morpheus8"
+    URL = "/medspa/morpheus8/"
+    weight = 10
+    
+    [[menu.medspa]]
+    parent = "MedSpa Services"
+    name = "Microlaser Peel"
+    URL = "/medspa/microlaser-peel/"
+    weight = 11
+
+    [[menu.medspa]]
+    parent = "MedSpa Services"
+    name = "Profractional Laser"
+    URL = "/medspa/profractional-laser/"
+    weight = 12
+
+    [[menu.medspa]]
+    parent = "MedSpa Services"
+    name = "Restylane"
+    URL = "/medspa/restylane/"
+    weight = 13
+
+    [[menu.medspa]]
+    parent = "MedSpa Services"
+    name = "Skinpen Microneedling"
+    URL = "/medspa/skinpen/"
+    weight = 14
+
+    [[menu.medspa]]
+    parent = "MedSpa Services"
+    name = "Ultrashape"
+    URL = "/medspa/ultrashape/"
+    weight = 15
+
+    [[menu.medspa]]
+    parent = "MedSpa Services"
+    name = "Vein Treatments"
+    URL = "/medspa/vein-treatments/"
+    weight = 16
+    
+    [[menu.medspa]]
+    parent = "MedSpa Services"
+    name = "Venus Freeze"
+    URL = "/medspa/venus-freeze/"
+    weight = 17
+  
+  [[menu.medspa]]
+  name = "Procedures"
+  URL = "/service"
+  weight = 4
+
+    [[menu.medspa]]
+    parent = "Procedures"
+    name = "Breast"
+    URL = "/breast"
+    weight = 1
+
+    [[menu.medspa]]
+    parent = "Procedures"
+    name = "Body"
+    URL = "/body"
+    weight = 2
+
+    [[menu.medspa]]
+    parent = "Procedures"
+    name = "Face"
+    URL = "/face"
+    weight = 3  
+  
+  [[menu.medspa]]
+  name = "For Men"
+  URL = "/formen"
+  weight = 5
+
+  [[menu.medspa]]
+  name = "Patient Login"
+  URL = "https://www.mypatientvisit.com/#/login?practiceID=YEOFXY"
+  weight = 6
+
+  [[menu.medspa]]
+  name = "Financing"
+  URL = "/financing"
+  weight = 7
+
+  [[menu.medspa]]
+  name = "Consultation-Contact"
+  URL = "/contact"
+  weight = 8
+
+
+
+[params]
+logo = "images/logo.png"
+Image = "images/logo.png"
+home = "Home"
+# Meta data
+description = "Top rated Chicago plastic surgeon, Dr. Michael Horn is a nationally renowned cosmetic breast implant, body & face surgery opinion leader with a state of the art facility"
+author = "Dr. Michael Horn M.D. Chicago"
+
+# Google Analitycs
+googleAnalitycsID = "UA-35139420-1"
+
+  # Preloader
+  [params.preloader]
+  enable = true
+
+  [params.navBtn]
+  btnText = "Call: (312) 202-9000"
+  btnSubText = "Call to schedule a consultation"
+  URL = "3122029000"
+
+# Quality Consult
+[params.consult]
+  title = "Complimentary Consultation"
+  description = "A renowned cosmetic surgeon with a 5 star reputation for high quality care and superior aesthetic surgery results."
+  formAction = "#"
+  [[params.consult.serviceType]]
+    name = "Breast"
+  [[params.consult.serviceType]]
+    name = "Face"
+  [[params.consult.serviceType]]
+    name = "Body"
+  [[params.consult.serviceType]]
+    name = "Medspa"
+
+# share blog post
+[[params.sharePost]]
+icon = "ti-facebook"
+URL = "#"
+
+[[params.sharePost]]
+icon = "ti-twitter-alt"
+URL = "#"
+
+[[params.sharePost]]
+icon = "ti-vimeo-alt"
+URL = "#"
+
+[[params.sharePost]]
+icon = "ti-linkedin"
+URL = "#"
+
+[markup.goldmark.renderer]
+unsafe= true
+
+uglyurls = true

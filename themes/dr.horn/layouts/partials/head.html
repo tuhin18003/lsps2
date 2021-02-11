@@ -1,0 +1,84 @@
+<head>
+  <meta charset="utf-8">
+  <title>{{ .Title }}</title>
+
+  {{ "<!-- mobile responsive meta -->" | safeHTML }}
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+  {{ if .Params.canonicalUrl }}
+  <link rel="canonical" href="{{ .Params.canonicalUrl }}">
+  {{ else }}
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{ end }}
+  
+  <link rel=“icon” href="/images/favicon.ico" />
+
+  {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+  {{ hugo.Generator }}
+
+  {{ "<!-- plugins -->" | safeHTML }}
+  <!-- <noscript> -->
+    {{ range .Site.Params.plugins.css }}
+    <link rel="stylesheet" href="{{ .URL | absURL }}">
+    {{ end }}
+  <!-- </noscript> -->
+
+  {{ "<!-- Main Stylesheet -->" | safeHTML }}
+  {{ $styles := resources.Get "scss/style.scss" | toCSS | minify }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+
+  {{ "<!--Favicon-->" | safeHTML }}
+  <link rel="shortcut icon" href="{{ "images/favicon.ico" | absURL }} " type="image/x-icon">
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Physician",
+      "name": "Lakeshore Plastic Surgery",
+      "medicalSpecialty": "http://schema.org/PlasticSurgery",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "60 East Delaware Place St. 15th Floor",
+        "addressLocality": "Chicago",
+        "addressRegion": "IL",
+        "postalCode": "60611"
+      },
+      "image": "https://www.lakeshoreplasticsurgery.com/images/logo.png",
+      "email": "info@chicagobreast.com",
+      "telePhone": "312-202-9000",
+      "url": "https://www.lakeshoreplasticsurgery.com",
+      "paymentAccepted": [ "cash", "check", "credit card" ],
+      "openingHours": "Mo,Tu,We,Th,Fr 08:00-18:00",
+      "openingHoursSpecification": [ {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      } ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "41.899353",
+        "longitude": "-87.625456"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "ratingCount": "462"
+       }
+    }
+    </script>
+    
+    <!-- Google Tag Manager -->
+<!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MCLRJJT');</script> -->
+  <!-- End Google Tag Manager -->
+
+</head>

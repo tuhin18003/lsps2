@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+{{ partial "nav-body.html" . }}
+
+{{ partial "page-title.html" . }}
+
+{{ "<!-- gallery -->" | safeHTML }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+{{ "<!-- /gallery -->" | safeHTML }}
+
+{{ end }}

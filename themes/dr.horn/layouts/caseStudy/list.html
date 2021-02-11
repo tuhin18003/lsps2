@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+{{- partial "header.html" . -}}
+
+{{ partial "page-title.html" . }}
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      {{ $.Scratch.Set "counter" 0 }}
+      {{ range .Data.Pages }}
+      {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+      {{ "<!-- model item -->" | safeHTML }}
+      <div class="col-lg-3 col-6 mb-5">
+        <div class="model text-center">
+          <div class="model-img mb-4 position-relative shadow">
+            <img class="img-fluid w-100" src="{{ .Params.Image }}" onerror="this.src='{{ .Params.ImageAlt | absURL }}'" alt="patient image">
+            <span class="model-count position-absolute">Patient {{$.Scratch.Get `counter`}}</span>
+          </div>
+          <h4>{{ .Title }}</h4>
+          <a class="btn btn-outline-primary btn-sm" href="{{ .Permalink }}">See Results</a>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

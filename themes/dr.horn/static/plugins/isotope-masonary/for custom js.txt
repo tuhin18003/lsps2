@@ -1,0 +1,19 @@
+  // isotope js
+  $(".filtering-menu li").on("click", function () {
+    var filterValue = $(this).attr('data-filter');
+    $(".filtering-list").isotope({
+      filter: filterValue,
+      masonry: {
+        columnWidth: 1,
+        horizontalOrder: false
+      }
+    });
+  });
+
+  $(".filtering-list").isotope({
+    layoutMode: "masonry",
+    masonry: {
+      columnWidth: 1,
+      horizontalOrder: false
+    }
+  });

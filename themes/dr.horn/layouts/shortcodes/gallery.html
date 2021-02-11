@@ -1,0 +1,81 @@
+{{ "<!-- gallery -->" | safeHTML }}
+<div class="col-12">
+  <div class="row">
+    <div class="col-sm-7 text-center text-sm-left">
+      {{ with .Site.Data.breast.gallery }}
+      <h2 class="section-title">{{ .title }} <br>{{ .titleSpan }}</h2>
+      
+    </div>
+    <div class="col-sm-5 text-center text-sm-right align-self-center">
+      <a href="{{ .galleryButton }}" class="btn btn-outline-primary">view gallery</a>
+      {{ end }}
+    </div>
+  </div>
+  <div class="row mb-50">
+    <div class="col-lg-3 col-md-4 col-6">
+      <div class="gallery-item">
+        <img src="{{.Get 1 | absURL }}" alt="gallery-image" class="img-fluid w-100 mb-0">
+        <div class="hover-icon">
+          <a href="{{.Get 1 | absURL }}" class="venobox"><i class="ti-eye"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <div class="gallery-item">
+        <img src="{{.Get 2 | absURL }}" alt="gallery-image" class="img-fluid w-100 mb-0">
+        <div class="hover-icon">
+          <a href="{{.Get 2 | absURL }}" class="venobox"><i class="ti-eye"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <div class="gallery-item">
+        <img src="{{.Get 3 | absURL }}" alt="gallery-image" class="img-fluid w-100 mb-0">
+        <div class="hover-icon">
+          <a href="{{.Get 3 | absURL }}" class="venobox"><i class="ti-eye"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <div class="gallery-item">
+        <img src="{{.Get 4 | absURL }}" alt="gallery-image" class="img-fluid w-100 mb-0">
+        <div class="hover-icon">
+          <a href="{{.Get 4 | absURL }}" class="venobox"><i class="ti-eye"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <div class="gallery-item">
+        <img src="{{.Get 5 | absURL }}" alt="gallery-image" class="img-fluid w-100 mb-0">
+        <div class="hover-icon">
+          <a href="{{.Get 5 | absURL }}" class="venobox"><i class="ti-eye"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <div class="gallery-item">
+        <img src="{{.Get 6 | absURL }}" alt="gallery-image" class="img-fluid w-100 mb-0">
+        <div class="hover-icon">
+          <a href="{{.Get 6 | absURL }}" class="venobox"><i class="ti-eye"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <div class="gallery-item">
+        <img src="{{.Get 7 | absURL }}" alt="gallery-image" class="img-fluid w-100 mb-0">
+        <div class="hover-icon">
+          <a href="{{.Get 7 | absURL }}" class="venobox"><i class="ti-eye"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <div class="gallery-item">
+        <img src="{{.Get 8 | absURL }}" alt="gallery-image" class="img-fluid w-100 mb-0">
+        <div class="hover-icon">
+          <a href="{{.Get 8 | absURL }}" class="venobox"><i class="ti-eye"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ "<!-- /gallery -->" | safeHTML }}

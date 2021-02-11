@@ -1,0 +1,23 @@
+{{ "<!-- vip membership -->" | safeHTML }}
+<section class="section bg-gray bg-shape">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-md-6 mb-4 mb-md-0">
+        {{ with .Site.Data.homepage.vip }}
+        <h2 class="section-title">{{ .title }}<br>
+          <span class="text-primary font-weight-light">{{ .titleSpan }}</span></h2>
+        <p class="mb-4">{{ .content }}</p>
+        {{ end }}
+        <ul class="list-styled">
+          {{ range .Site.Data.homepage.vip.advantageList }}
+          <li class="text-dark mb-2">{{ .listItem }}</li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="col-lg-5 col-md-6 align-self-end">
+        <img class="img-fluid" src="{{ .Site.Data.homepage.vip.card | absURL }}" onerror="this.src='{{ .Site.Data.homepage.vip.cardAlt | absURL }}'" alt="{{ .Site.Data.homepage.vip.altText }}">
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /vip membership -->" | safeHTML }}

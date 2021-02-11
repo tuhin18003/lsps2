@@ -1,0 +1,35 @@
+<div class="col-lg-4">
+  <div class="bg-gray p-5">
+    {{ with .Site.Params.consult }}
+    <h3 class="mb-3">{{ .title }}</h3>
+    <p>{{ .description | safeHTML }}</p>
+    {{ end }}
+    <div class="overflow-hidden mb-3 mt-4"><div class="border-dashed-bottom"></div></div>
+    <form class="row" name="LSPS Consultation" method="POST" netlify-honeypot="bot-field" data-netlify="true" action="{{ .Site.Params.consult.formAction }}">
+      <div class="col-12">
+        <input type="text" name="name" id="name" class="form-control mb-3" placeholder="Your name*" required>
+      </div>
+      <div class="col-12">
+        <input type="email" name="email" id="email" class="form-control mb-3" placeholder="Your email*" required>
+      </div>
+      <div class="col-12">
+        <input type="tel" name="phone" id="phone" class="form-control mb-3" placeholder="Phone number*" required>
+        <label style="display:none !important">Don’t fill this out if you're human: <input name="bot-field" /></label>
+      </div>
+      <div class="col-12">
+        <select class="form-control mb-3" name="type" id="type">
+          <option selected disabled>Service type*</option>
+          {{ range .Site.Params.consult.serviceType }}
+          <option value="{{ .name | lower | urlize }}" name="{{ .name | lower | urlize }}">{{ .name }}</option>
+          {{ end }}
+        </select>
+      </div>
+      <div class="col-12">
+        <textarea name="message" id="message" class="form-control form-control-sm mb-3" placeholder="Type your message*" required></textarea>
+      </div>
+      <div class="col-12 align-self-end">
+        <button class="btn btn-primary btn-responsive" type="submit" value="send">Request A Consultation</button>
+      </div>
+    </form>
+  </div>
+</div>

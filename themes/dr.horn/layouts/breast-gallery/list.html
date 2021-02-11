@@ -1,0 +1,141 @@
+{{ define "main" }}
+
+{{ partial "nav-breast.html" . }}
+
+{{ partial "page-title.html" . }}
+
+<section class="section breast-gallery single-item-page">
+	{{ partial "breast-gallery/single-item" . }}
+</section>
+
+<section class="section breast-gallery list-page">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-lg-4"> 
+				{{ partial "breast-gallery/sidebar" . }}
+			</div>
+			<div class="col-xs-12 col-lg-8">
+				<div class="g-content">
+
+					{{ $showDataOnload := .Site.Data.breastGallery.galleryRules.showDataOnload }}
+					{{ $sPath := .Site.Data.breastGallery.galleryPath.baseFolder }}
+					{{ $absPath := .Site.Data.breastGallery.galleryPath.absPath }}
+					{{ $dirPath := (printf "/%s/%s/" $sPath $absPath ) }}
+					{{ $scratch := newScratch }}
+
+					{{ $filterList := .Site.Data.breastGallery.filterList }}
+					{{ $flagName := "" }}
+					{{ $curName := "" }}
+
+					{{ range $elem_key, $elem_val := .Site.Data.breastGallery.galleryItem }}
+						{{ $elem_key := add $elem_key 1 }}
+						{{ $binfo := .binfo }}
+						{{ $ainfo := .ainfo }}
+						{{ $details := .details }}
+						{{ $review := .review }}
+						{{ $itemTitle := .itemTitle }}
+						{{ $catTitle := .catTitle }}
+						{{ $age := .age }}
+
+						{{ $cat := .categories }}
+
+						{{ if .imageFolder }}
+						{{ $pn := .imageFolder }}
+						{{ $path := printf "%s%s" $dirPath $pn }}
+						{{ $images := readDir $path }}
+						{{ range $imgNum, $elem :=  $images }}
+							{{ if .IsDir }} 
+
+							{{ else }}
+
+
+							
+
+					{{ $findCat := split $cat " " }}
+					{{ $catCount := 1 }} 
+					{{ range $elem_keys, $elem_vals := $filterList }}
+						{{ if ( and (in $findCat .category) (eq $catCount 1 ) ) }}
+						<!-- title here -->
+						{{ $catCount = add $catCount 2 }}
+
+						{{ $curName = .name }}
+						
+						{{ end }}
+					{{ end }}
+
+					<!-- item group end tag-->
+					{{ if (and (ne $flagName $curName) (gt $elem_key 1)) }}
+						</div>
+					{{ end }}
+
+					<!-- item group start tag-->
+					{{ if ne $flagName $curName }}		
+						<div class="item-group">
+						<h2 class="gallery-title"><i class="fa fa-camera"></i>  {{ $curName }} Gallery</h2>
+					{{ end }}
+
+					
+
+
+						<div class="item">
+							<!-- <div class="gallery-tile-wrapper"> -->
+								<div class="row text-center">
+									<div class="col-sm-6 col-md-5 wrapper-img"> 
+										
+										<img class="img-responsive" data-picid="{{ $elem_key }}" data-src="{{ printf "%s/%s/%s" $absPath $pn .Name | absURL }}" alt="{{ .Name }}">
+
+										<div class="row">
+											<div class="col-lg-6 col-sm-6 col-xs-6">
+												<span class="img-caption">Before</span>
+											</div>
+											<div class="col-sm-6 col-xs-6">
+												<span class="img-caption">After</span>
+											</div>
+										</div>
+										
+									</div>
+									<div class="col-sm-6 col-md-7">
+										<div class="row">
+											<div class="col-lg-12 ttl"><h3> </h3></div>
+											<div class="col-lg-12 sum">
+												<div class="row">
+													<div class="col-lg-12">
+														<p> Age: {{ $age }}<br/> Gender: Female<br/> 
+															{{ $details }}
+														</p>
+													</div>
+													<div class="col-sm-12"> 
+														<a class="btn btn-blue btn-sm" href="{{ "breast-gallery/beforeandafter" | absURL }}/?{{ (querify "listing" $pn) | safeURL }}">View Photos</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							<!-- </div> -->
+						</div>
+
+						<!-- div here -->
+					{{ if eq $flagName $curName }}
+						
+					{{ end }}
+					{{ $flagName = $curName }}
+					
+
+					{{ end }}
+					{{ end }}
+					{{ end }}
+					{{ end }}
+
+				</div>
+			</div>
+		</div>
+	</div>
+    
+</section>
+
+
+{{ "<!-- /gallery -->" | safeHTML }}
+
+{{ end }}
+

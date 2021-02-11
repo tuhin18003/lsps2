@@ -1,0 +1,99 @@
+# slider
+slider:
+  # slider item
+  - bgImage : "#"
+    bgImage : "images/slider/breast/slide-1.jpg"
+    bgImageAlt : "images/slider/breast/slide-1.jpg"
+    title : "Breast Augmentation - Implant Surgery Chicago"
+    content : "Dr. Michael Horn is a top rated Breast Augmentation Implant Surgeon in Chicago.<br>"
+    btnText1 : "Schedule a Consultation"
+    URL1 : "/contact"
+    btnText2 : "Call Today"
+    URL2 : "3122029000"
+    
+    
+  # slider item
+  - bgImage : "images/slider/breast/slide-2.jpg"
+    bgImageAlt : "images/slider/breast/slide-2.jpg"
+    title : "Breast Implant Replacement & Breast Reduction"
+    content : "Breast Revision Surgeon, Dr. Michael Horn Chicago, Has an Artistic Approach To Breast Aesthetics."
+    btnText1 : "Schedule a Consultation"
+    URL1 : "/contact"
+    btnText2 : "Call Today"
+    URL2 : "3122029000"
+  
+    
+  # service Description
+serviceDescription:
+  image : "images/breast/breast-augmentation-main.jpg"
+  imageAlt : "images/breast/breast-augmentation-main.jpg"
+  altText : "breast implant surgery"
+  title : "Breast Augmentation Chicago"
+  subTitle : "Real Results."
+  content : "Led by renowned plastic surgeon Michael A. Horn, M.D., the Michael Horn Center for Cosmetic Surgery is dedicated to helping patients achieve their personal appearance goals by providing the highest quality medical care tailored to their individual needs."
+  button :
+    btnText : "Contact Us"
+    URL : "/contact"
+
+# gallery
+gallery:
+  title : "See Our Gallery"
+  titleSpan : "of Beautiful Clients"
+  galleryButton : "/breast-gallery"
+  galleryItem:
+    - image : "images/breastgallery/ba-1/ba.webp"
+      imageAlt : "images/breastgallery/ba-1/ba.webp"
+      altText : "breast augmentation surgery"
+      
+    - image : "images/breastgallery/ba-2/ba.webp"
+      imageAlt : "images/breastgallery/ba-2/ba.webp"
+      altText : "breast implant surgeon chicago"
+      
+    - image : "images/breastgallery/ba-3/ba.webp"
+      imageAlt : "images/breastgallery/ba-3/ba.webp"
+      altText : "breast implant doctor chicago"
+      
+    - image : "images/breastgallery/ba-4/ba.webp"
+      imageAlt : "images/breastgallery/ba-4/ba.webp"
+      altText : "top rated breast lift surgeon"
+      
+    - image : "images/breastgallery/ba-5/ba.webp"
+      imageAlt : "images/breastgallery/ba-5/ba.webp"
+      altText : "breast reduction surgeon chicago"
+      
+    - image : "images/breastgallery/ba-6/ba.webp"
+      imageAlt : "images/breastgallery/ba-6/ba.webp"
+      altText : "breast plastic surgeon chicago"
+      
+    - image : "images/breastgallery/ba-7/ba.webp"
+      imageAlt : "images/breastgallery/ba-7/ba.webp"
+      altText : "breast implant surgery"
+      
+    - image : "images/breastgallery/ba-8/ba.webp"
+      imageAlt : "images/breastgallery/ba-8/ba.webp"
+      altText : "breast implant replacement "
+      
+    - image : "images/breastgallery/ba-9/ba.webp"
+      imageAlt : "images/breastgallery/ba-9/ba.webp"
+      altText : "male breast reduction chicago"
+
+
+# before and after procedure
+beforeAfter:
+  title : "Beautiful Surgical Breast Results"
+  description : "Look & Feel Your Best With Breast Augmentation - Chicago Breast Surgeon, Dr. Michael Horn"
+  before : "Before procedures"
+  after : "After procedures"
+  beforeImage: "images/procedure/breast/breastaugmentation-before.jpg"
+  beforeImageAlt: "images/procedure/breast/breastaugmentation-before.jpg"
+  afterImage: "images/procedure/breast/breastaugmentation-after.jpg"
+  afterImageAlt: "images/procedure/breast/breastaugmentation-after.jpg"
+
+#call to action
+cta:
+  title : "Have Any"
+  titleSpan : "Questions?"
+  content : "Led by renowned plastic surgeon Michael A. Horn, M.D., the Michael Horn Center for Cosmetic Surgery is dedicated to helping patients achieve their personal appearance goals."
+  button:
+    btnText : "Request Consultation"
+    URL : "/contact"

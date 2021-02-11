@@ -1,0 +1,130 @@
+# slider
+slider:
+  # slider item
+  - bgImage : "images/slider/medspa/slide-1.webp"
+    bgImageAlt : "images/slider/medspa/slide-1.jpg"
+    title : "Face & Body Medspa Services Chicago"
+    content : "Face & Body MedSpa Services for the Chicagoland Area."
+    btnText1 : "Schedule a Consultation"
+    URL1 : "/contact"
+    btnText2 : "Call Today"
+    URL2 : "3122029000"
+    
+  # slider item
+  - bgImage : "images/slider/medspa/slide-2.webp"
+    bgImageAlt : "images/slider/medspa/slide-2.jpg"
+    title : "Face & Body Medspa Services Chicago"
+    content : "Look and Feel Your Very Best With MedSpa Services in Chicago."
+    btnText1 : "Schedule a Consultation"
+    URL1 : "/contact"
+    btnText2 : "Call Today"
+    URL2 : "3122029000"
+    
+# service Description
+serviceDescription:
+  image : "images/medspa.webp"
+  imageAlt : "images/medspa.png"
+  altText : "Medspa, facial, injectables and fillers in downtown Chicago facility"
+  title : "Cosmetic Medspa Services for Chicago"
+  subTitle : "Look Your Best With Our VIP Membership"
+  content : "Led by renowned plastic surgeon Michael A. Horn, M.D., the Michael Horn Center for Cosmetic Surgery is dedicated to helping patients achieve their personal appearance goals by providing the highest quality medical care tailored to their individual needs."
+  button :
+    btnText : "Contact Us"
+    URL : "/contact"
+
+# gallery
+gallery:
+  title : "See Our Gallery"
+  titleSpan : "of Beautiful Clients"
+  galleryItem:
+    - image : "images/gallery/medspagallery/greenpeel.webp"
+      imageAlt : "images/gallery/medspagallery/greenpeel.jpg"
+      altText : "green peel chicago medspa"
+
+    - image : "images/gallery/medspagallery/bbltreatment2.webp"
+      imageAlt : "images/gallery/medspagallery/bbltreatment2.jpg"
+      altText : "bbl facial treatment"  
+
+    - image : "images/gallery/medspagallery/3greenpeels.webp"
+      imageAlt : "images/gallery/medspagallery/3greenpeels.jpg"
+      altText : "chemial peel chicago medspa"  
+
+    - image : "images/gallery/medspagallery/bblmlp.webp"
+      imageAlt : "images/gallery/medspagallery/bblmlp.jpg"
+      altText : "bbl treatment chicago"
+
+    - image : "images/gallery/medspagallery/bblmlpprofract.webp"
+      imageAlt : "images/gallery/medspagallery/bblmlpprofract.jpg"
+      altText : "chicago bbl porgractional treatment"  
+
+    - image : "images/gallery/medspagallery/green-peels.webp"
+      imageAlt : "images/gallery/medspagallery/green-peels.jpg"
+      altText : "green peels"
+
+    - image : "images/gallery/medspagallery/bbltreatment.webp"
+      imageAlt : "images/gallery/medspagallery/bbltreatment.jpg"
+      altText : "bbl"      
+
+    - image : "images/gallery/medspagallery/bbltreatment3.webp"
+      imageAlt : "images/gallery/medspagallery/bbltreatment3.jpg"
+      altText : "bbl treatment patient before & after"
+
+    - image : "images/gallery/medspagallery/laser-hair-removal.webp"
+      imageAlt : "images/gallery/medspagallery/laser-hair-removal.jpg"
+      altText : "chicago laser hair removal client"  
+
+    - image : "images/gallery/medspagallery/3greenpeels2.webp"
+      imageAlt : "images/gallery/medspagallery/3greenpeels2.jpg"
+      altText : "green peel for face"
+
+    - image : "images/gallery/medspagallery/bbltreatments4.webp"
+      imageAlt : "images/gallery/medspagallery/bbltreatments4.jpg"
+      altText : "before and after patient after bbl treatment"      
+    
+    - image : "images/gallery/medspagallery/1.webp"
+      imageAlt : "images/gallery/medspagallery/1.jpg"
+      altText : "botox patient before and after results in Chicago office"
+      
+    - image : "images/gallery/medspagallery/2.webp"
+      imageAlt : "images/gallery/medspagallery/2.jpg"
+      altText : "facial fillers removed wrinkles of blonde woman"
+      
+    - image : "images/gallery/medspagallery/3.webp"
+      imageAlt : "images/gallery/medspagallery/3.jpg"
+      altText : "younger lady happy with reduced frown lines on face"
+      
+    - image : "images/gallery/medspagallery/4.webp"
+      imageAlt : "images/gallery/medspagallery/4.jpg"
+      altText : "Chicago resident sees noticably less forehead wrinkles after botox injections"
+      
+    - image : "images/gallery/medspagallery/5.webp"
+      imageAlt : "images/gallery/medspagallery/5.jpg"
+      altText : "Crows feet gone after medspa treatments"
+      
+    - image : "images/gallery/medspagallery/6.webp"
+      imageAlt : "images/gallery/medspagallery/6.jpg"
+      altText : "top rated Chicago medspa the sign reads"
+      
+    - image : "images/gallery/medspagallery/7.webp"
+      imageAlt : "images/gallery/medspagallery/7.jpg"
+      altText : "State of the art medical spa in gold coast Chicago"
+      
+# before and after procedure
+beforeAfter:
+  title : "Real Beautiful Results"
+  description : ""
+  before : "Before procedures"
+  after : "After procedures"
+  beforeImage: "images/procedure/medspa/botox-before.webp"
+  beforeImageAlt: "images/procedure/medspa/botox-before.jpg"
+  afterImage: "images/procedure/medspa/botox-after.webp"
+  afterImageAlt: "images/procedure/medspa/botox-after.jpg"
+
+#call to action
+cta:
+  title : "Have Any"
+  titleSpan : "Questions?"
+  content : "Led by renowned plastic surgeon Michael A. Horn, M.D., the Michael Horn Center for Cosmetic Surgery is dedicated to helping patients achieve their personal appearance goals."
+  button:
+    btnText : "Request Consultation"
+    URL : "/contact"

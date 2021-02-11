@@ -1,0 +1,39 @@
+about:
+  image : "images/about/doctor.webp"
+  imageAlt : "images/about/doctor.jpg"
+  altText : "Board certified Chicago plastic surgeon"
+  title : "Meet Dr. Michael Horn"
+  description: "Top Plastic Surgeon in Chicago"
+  content : "A skilled and caring professional, Dr. Michael Horn provides exceptional plastic surgery that is truly tailored to the individual patient. Renowned for his aesthetic results, Dr. Horn helps his patients achieve their appearance goals by combining experience, talent, and the highest quality medical care. Although Dr. Michael Horn is most well known for his perfected breast augmentation surgery, he also offers abdominoplasty, blepharoplasty, facelift, rhinoplasty, liposuction, and a comprehensive range of plastic surgery options, as well as non-surgical services like BOTOX® Cosmetic, laser hair removal, and vein treatments. 
+  <br>
+  <br>
+  Dr. Horn earned his medical degree at Loyola University in Chicago. He completed a general surgery residency with the Medical College of Wisconsin, as well as sub-specialty training in plastic surgery with a second residency at Loyola University. Dr. Michael Horn is board certified by the American Board of Plastic Surgery and is a member of the American Society of Plastic Surgeons and the Chicago Society of Plastic Surgeons. 
+  <br>
+  <br>
+  <br>
+  Dr. Michael Horn is a frequent lecturer on the subject of plastic surgery and he attends national meetings to continue developing innovative plastic surgery techniques. His work has been featured in several professional publications. His ongoing commitment to patient safety and satisfaction is evident in the personal attention and care he provides to each of his plastic surgery clients. From the initial consultation to the final follow up exam, Dr. Horn provides compassionate treatment tailored to the specific needs and goals of the individual"
+
+performance:
+  title : "Dr. Michael Horn performs all breast augmentation procedures personally."
+  content : "As a premier Chicago-area breast augmentation and enlargement surgeon, he is committed to providing exclusive care tailored to each patient’s needs. He ensures a comfortable and pleasant experience from beginning to end, and makes himself fully available throughout the process to address patient questions and concerns. Dr. Horn’s patients often describe him as approachable with a compassionate demeanor, and he is dedicated to providing exceptional treatment to achieve the results that each patient desires.
+  <br>
+  <br>
+  For more information on the Michael Horn Center for Cosmetic Surgery, or to schedule a personal consultation with Dr. Horn, please [contact our practice](/contact) today."
+  phone : "(312) 202-9000"
+  certificates : "images/about/reviews.webp"
+  certificatesAlt : "images/about/reviews.jpg"
+  altText : "Chicago plastic surgeon reviews"
+  button:
+    btnText : "Read My Reviews"
+    URL : "/reviews"
+
+follow :
+  - icon : "ti-facebook"
+    URL : "https://www.facebook.com/DrMichaelHorn"
+    
+  - icon : "ti-twitter-alt"
+    URL : "https://twitter.com/DrMichaelAHorn"
+    
+  - icon : "ti-youtube"
+    URL : "https://www.youtube.com/channel/UCw1OWczDcbuCYveSyPPKFzA"
+    

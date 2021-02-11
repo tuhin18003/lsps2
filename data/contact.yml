@@ -1,0 +1,22 @@
+contact:
+  title : "Contact Us - Schedule Appointment"
+  subTitle : "Contact Michael Horn Center for Cosmetic Surgery in Chicago, Illinois"
+  description : "For more information on cosmetic surgery options, or to schedule a consultation, please complete the form & our staff will contact you shortly. Now for a limited time we offer complimentary surgery consultations."
+  contactList :
+    - listItem : "60 East Delaware Place, 15th Floor"
+    - listItem : "Chicago, IL 60611"
+    - listItem : "(312) 202-9000"
+    - listItem : "info@chicagobreast.com"
+  
+  openingHours:
+    - day : "Monday & Wednesday"
+      time : "8:00 – 6:00"
+      
+    - day : "Tuesday & Thursday"
+      time : "9:00 – 6:00"
+      
+    - day : "Saturday"
+      time : "9:00 - 3:00"
+
+    - day : "Sunday"
+      time : " **Closed**"  

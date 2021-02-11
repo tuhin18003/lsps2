@@ -1,0 +1,35 @@
+<div class="col-lg-4">
+  <!-- <div class="widget mb-50">
+    <h4 class="mb-4">Search</h4>
+    <form action="{{ .Site.BaseURL }}/search">
+      <div class="search-box position-relative">
+        <input type="search" class="form-control border border-primary" placeholder="Search...">
+        <button type="submit" class="search-icon"><i class="ti-search text-primary"></i></button>
+      </div>
+    </form>
+  </div> -->
+  <div class="widget mb-50">
+    <h4>Category</h4>
+    {{- if isset .Site.Taxonomies "categories" }}
+    {{- if not (eq (len .Site.Taxonomies.categories) 0) }}
+    <ul class="list-unstyled category-list">
+      {{- range $name, $items := .Site.Taxonomies.categories }}
+      <li><a href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a></li>
+      {{- end }}
+    </ul>
+    {{- end }}
+    {{- end }}
+  </div>
+  <div class="widget">
+    <h4 class="mb-4">Latest Articles</h4>
+    {{ range first 3 ( where .Site.Pages "Type" "post" )}}
+    <div class="media mb-4">
+      <img class="mr-3 img-fluid post-thumb" src="{{ .Params.Image | absURL }}" alt="post-thumb">
+      <div class="media-body">
+        <h6 class="mt-0"><a href="{{ .Permalink }}" class="text-dark">{{ .Title }}</a></h6>
+        on {{ .PublishDate.Format "Jan 02 2006" }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>

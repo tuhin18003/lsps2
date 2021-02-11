@@ -1,0 +1,25 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+<div class="bullet-points">
+  <div class="row">
+    <div class="col-lg-6 bt">
+      <ul class="p1">
+        <li class="title">Before</li>
+        {{ if .Get 0 }}
+            {{ range .Get 0 }}
+            <li>{{ . }}</li>
+            {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+    <div class="col-lg-6 at">
+      <ul class="p2">
+        <li class="title">After</li>
+        {{ if .Get 1 }}
+          {{ range .Get 1 }}
+          <li>{{ . }}</li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>

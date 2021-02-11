@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+{{ partial "header.html" . }}
+
+{{ partial "page-title.html" . }}
+
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          {{ with .Site.Data.faqs.faqs }}
+          <h3 class="section-title">{{ .title }}</h3>
+          <p class="mb-5">{{ .description }}</p>
+          {{ end }}
+          <h4>Care Credit</h4>
+          <p>CareCredit is a healthcare credit card designed for your health, beauty, and wellness needs. It’s a way to pay for the costs of many 
+            treatments and procedures and allows you to make convenient monthly payments. For complete details of healthcare financing terms, <a href="http://www.carecredit.com/">visit the
+            website.</a></p>
+            <a href="http://www.carecredit.com/" target="_blank"><img src="../../images/financing/carecredit.jpg" alt="plastic surgery financing chicago"></a>
+        </div>
+        {{ partial "consult.html" . }}
+      </div>
+    </div>
+  </section>
+
+  {{ partial "vip-membership.html" . }}
+
+{{ end }}

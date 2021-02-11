@@ -1,0 +1,127 @@
+/* Button style */
+.btn {
+  font-size: 16px;
+  font-family: $primary-font;
+  text-transform: capitalize;
+  padding: 16px 42px;
+  border-radius: 35px;
+  font-weight: 600;
+  border: 2px solid;
+  position: relative;
+  z-index: 1;
+  transition: .2s ease;
+
+  &:focus {
+    outline: 0;
+    box-shadow: none !important;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.btn-sm {
+  padding: 10px 30px;
+}
+
+.btn-primary {
+  background: $primary-color;
+  color: $text-color-dark;
+  border-color: $primary-color;
+
+  &:active {
+    background: $primary-color !important;
+    border-color: $primary-color;
+  }
+
+  &:hover {
+    background: darken($color: $primary-color, $amount: 10);
+    border-color: $primary-color;
+  }
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+  color: $text-color-dark;
+  background-color: darken($color: $primary-color, $amount: 10);
+  border-color: darken($color: $primary-color, $amount: 10);
+}
+
+
+.btn-light {
+  background: $white;
+  color: $text-color-dark;
+  border-color: $white;
+
+  &:active {
+    background: $primary-color !important;
+    border-color: $primary-color;
+  }
+
+  &:hover {
+    background: $primary-color;
+    border-color: $primary-color;
+  }
+}
+
+
+.btn-outline-primary {
+  background: transparent;
+  color: $text-color-dark;
+  border-color: $primary-color;
+
+  &:active {
+    background: $primary-color !important;
+    border-color: $primary-color;
+    color: $white;
+  }
+
+  &:hover {
+    background: $primary-color;
+    border-color: $primary-color;
+    color: $white;
+  }
+}
+
+
+.btn-outline-light {
+  background: transparent;
+  color: $white;
+  border-color: $white;
+
+  &:active {
+    background: $primary-color !important;
+    border-color: $primary-color;
+    color: $white;
+  }
+
+  &:hover {
+    background: $primary-color;
+    border-color: $primary-color;
+    color: $white;
+  }
+}
+
+.btn-responsive{
+  width: 100%;
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+  white-space: normal;
+  line-height: 1;
+  @include desktop {
+    font-size: 14px;
+  }
+}
+
+.btn-transparent{
+  background: transparent;
+  color: $primary-color;
+  border: 0;
+  &:hover{
+    color: darken($color: $primary-color, $amount: 5);
+    text-decoration: underline;
+  }
+}

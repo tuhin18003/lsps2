@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+{{ partial "header.html" . }}
+
+{{ partial "page-title.html" . }}
+
+{{ "<!-- gallery -->" | safeHTML }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <h2>Dr. Michael Horn Patient Reviews</h2>
+      <br>
+      <h3>Reviews brought to you directly from top major Reviews sites, all in one place.
+          Powered By ….</h3>
+          <img src="../images/rf-logo.jpg" float="right" alt="Dr. Michael Horn M.D. Chicago Reviews"/>
+          <script src="https://www.hwy65reviews.com/widgets/grid.js?client_id=1"></script>
+
+    </div>
+  </div>
+</section>
+{{ "<!-- /gallery -->" | safeHTML }}
+
+{{ end }}

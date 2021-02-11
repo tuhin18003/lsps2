@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+{{ partial "header.html" . }}
+
+{{ partial "page-title.html" . }}
+
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          {{ with .Site.Data.faqs.faqs }}
+          <h3 class="section-title">{{ .title }}</h3>
+          <p class="mb-5">{{ .description }}</p>
+          {{ end }}
+          {{ range .Site.Data.faqs.faqs.faqItem }}
+          <div class="mb-4">
+            <h4><i class="ti-hand-point-right text-primary mr-3"></i>{{ .question }}</h4>
+            <p>{{ .answer | markdownify }}</p>
+          </div>
+          {{ end }}
+        </div>
+        {{ partial "consult.html" . }}
+      </div>
+    </div>
+  </section>
+
+  {{ partial "vip-membership.html" . }}
+
+{{ end }}
