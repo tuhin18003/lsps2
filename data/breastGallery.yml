@@ -56,9 +56,9 @@ galleryItem:
     - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
     - '<a href="https://example.com/breast-implants">Breast Implants</a>'
     docProfile:
-      name: "Dr. Josep Roeder"
+      name: "Dr. Michael Horn M.D."
       rating: 5
-      text: "Experienced and Board Certified Nashville Plastic Surgeon - from dynamic data file"
+      text: "Experienced and Board Certified Nashville Plastic Surgeon"
       links: 
       - '<a href="https://example.com/doc-profile">View Facility</a>'
       - '<a href="https://example.com/doc-profile">Read Reviews</a>'
@@ -79,6 +79,17 @@ galleryItem:
     - Inframammary
     - 'Implant Type#: n/a'
     details: Breast Augmentation with Silicone Implants
+    procedure:
+    - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
+    - '<a href="https://example.com/breast-implants">Breast Implants</a>'
+    docProfile:
+      name: "Dr. Josep Roeder"
+      rating: 5
+      text: "Experienced and Board Certified Nashville Plastic Surgeon"
+      links: 
+      - '<a href="https://example.com/doc-profile">View Facility</a>'
+      - '<a href="https://example.com/doc-profile">Read Reviews</a>'
+
     
   - categories: cat-al
     imageFolder: ba-3
@@ -94,6 +105,17 @@ galleryItem:
     - Inframammary
     - 'Implant Type#: n/a'
     details: Breast Augmentation with Anchor Breast Lift
+    procedure:
+    - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
+    - '<a href="https://example.com/breast-implants">Breast Implants</a>'
+    docProfile:
+      name: "Dr. Josep Roeder"
+      rating: 5
+      text: "Experienced and Board Certified Nashville Plastic Surgeon"
+      links: 
+      - '<a href="https://example.com/doc-profile">View Facility</a>'
+      - '<a href="https://example.com/doc-profile">Read Reviews</a>'
+
   - categories: cat-a cat-mod
     imageFolder: ba-4
     altText: Breast Aug
@@ -108,6 +130,17 @@ galleryItem:
     - Inframammary
     - 'Implant Type#: n/a'
     details: Breast Augmentation
+    procedure:
+    - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
+    - '<a href="https://example.com/breast-implants">Breast Implants</a>'
+    docProfile:
+      name: "Dr. Josep Roeder"
+      rating: 5
+      text: "Experienced and Board Certified Nashville Plastic Surgeon"
+      links: 
+      - '<a href="https://example.com/doc-profile">View Facility</a>'
+      - '<a href="https://example.com/doc-profile">Read Reviews</a>'
+
   - categories: cat-a cat-mod
     imageFolder: ba-5
     altText: Breast Augmentation
@@ -122,6 +155,18 @@ galleryItem:
     - Inframammary
     - 'Implant Type#: n/a'
     details: Anchor Breast Lift
+    procedure:
+    - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
+    - '<a href="https://example.com/breast-implants">Breast Implants</a>'
+    docProfile:
+      name: "Dr. Josep Roeder"
+      rating: 5
+      text: "Experienced and Board Certified Nashville Plastic Surgeon"
+      links: 
+      - '<a href="https://example.com/doc-profile">View Facility</a>'
+      - '<a href="https://example.com/doc-profile">Read Reviews</a>'
+
+
   - categories: cat-a cat-mod
     imageFolder: ba-6
     altText: Breast Augmentation
@@ -136,6 +181,17 @@ galleryItem:
     - Inframammary
     - 'Implant Type#: n/a'
     details: Breast Augmentation with Silicone Implants
+    procedure:
+    - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
+    - '<a href="https://example.com/breast-implants">Breast Implants</a>'
+    docProfile:
+      name: "Dr. Michael Horn M.D."
+      rating: 5
+      text: "Experienced and Board Certified Nashville Plastic Surgeon"
+      links: 
+      - '<a href="https://example.com/doc-profile">View Facility</a>'
+      - '<a href="https://example.com/doc-profile">Read Reviews</a>'
+
   - categories: cat-a cat-ful
     imageFolder: ba-7
     altText: Breast Augmentation
@@ -150,6 +206,18 @@ galleryItem:
     - Inframammary
     - 'Implant Type#: n/a'
     details: Breast Augmentation with Silicone Implants
+    procedure:
+    - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
+    - '<a href="https://example.com/breast-implants">Breast Implants</a>'
+    docProfile:
+      name: "Dr. Michael Horn M.D."
+      rating: 5
+      text: "Experienced and Board Certified Nashville Plastic Surgeon"
+      links: 
+      - '<a href="https://example.com/doc-profile">View Facility</a>'
+      - '<a href="https://example.com/doc-profile">Read Reviews</a>'
+
+
   - categories: cat-a cat-mod
     imageFolder: ba-8
     altText: Breast Augmentation
@@ -164,6 +232,18 @@ galleryItem:
     - Inframammary
     - 'Implant Type#: n/a'
     details: Breast Augmentation with Silicone Implants
+    procedure:
+    - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
+    - '<a href="https://example.com/breast-implants">Breast Implants</a>'
+    docProfile:
+      name: "Dr. Michael Horn M.D."
+      rating: 5
+      text: "Experienced and Board Certified Nashville Plastic Surgeon"
+      links: 
+      - '<a href="https://example.com/doc-profile">View Facility</a>'
+      - '<a href="https://example.com/doc-profile">Read Reviews</a>'
+
+
   - categories: cat-r
     imageFolder: ba-9
     altText: Breast Reduction
@@ -178,6 +258,18 @@ galleryItem:
     - Inferior Pedicle
     - 'Implant Type#: n/a'
     details: Breast Reduction
+    procedure:
+    - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
+    - '<a href="https://example.com/breast-implants">Breast Implants</a>'
+    docProfile:
+      name: "Dr. Michael Horn M.D."
+      rating: 5
+      text: "Experienced and Board Certified Nashville Plastic Surgeon"
+      links: 
+      - '<a href="https://example.com/doc-profile">View Facility</a>'
+      - '<a href="https://example.com/doc-profile">Read Reviews</a>'
+
+
   - categories: cat-a cat-ful
     imageFolder: ba-10
     altText: Breast Augmentation
@@ -192,6 +284,18 @@ galleryItem:
     - Inframammary
     - 'Implant Type#: n/a'
     details: Breast Augmentation with Silicone Implants
+    procedure:
+    - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
+    - '<a href="https://example.com/breast-implants">Breast Implants</a>'
+    docProfile:
+      name: "Dr. Michael Horn M.D."
+      rating: 5
+      text: "Experienced and Board Certified Nashville Plastic Surgeon"
+      links: 
+      - '<a href="https://example.com/doc-profile">View Facility</a>'
+      - '<a href="https://example.com/doc-profile">Read Reviews</a>'
+
+
   - categories: cat-a cat-ful
     imageFolder: ba-11
     altText: Breast Augmentation
@@ -206,6 +310,17 @@ galleryItem:
     - Inframammary
     - 'Implant Type#: n/a'
     details: Breast Augmentation with Saline Implants
+    procedure:
+    - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
+    - '<a href="https://example.com/breast-implants">Breast Implants</a>'
+    docProfile:
+      name: "Dr. Michael Horn M.D."
+      rating: 5
+      text: "Experienced and Board Certified Nashville Plastic Surgeon"
+      links: 
+      - '<a href="https://example.com/doc-profile">View Facility</a>'
+      - '<a href="https://example.com/doc-profile">Read Reviews</a>'
+
   - categories: cat-l
     imageFolder: ba-12
     altText: Breast Lift
@@ -220,6 +335,17 @@ galleryItem:
     - Undetermined
     - 'Implant Type#: n/a'
     details: Anchor Breast Lift
+    procedure:
+    - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
+    - '<a href="https://example.com/breast-implants">Breast Implants</a>'
+    docProfile:
+      name: "Dr. Michael Horn M.D."
+      rating: 5
+      text: "Experienced and Board Certified Nashville Plastic Surgeon"
+      links: 
+      - '<a href="https://example.com/doc-profile">View Facility</a>'
+      - '<a href="https://example.com/doc-profile">Read Reviews</a>'
+
   - categories: cat-a cat-mod
     imageFolder: ba-13
     altText: Breast Augmentation
@@ -234,6 +360,17 @@ galleryItem:
     - Inframammary
     - 'Implant Type#: n/a'
     details: Breast Augmentation with Silicone Implants
+    procedure:
+    - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
+    - '<a href="https://example.com/breast-implants">Breast Implants</a>'
+    docProfile:
+      name: "Dr. Michael Horn M.D."
+      rating: 5
+      text: "Experienced and Board Certified Nashville Plastic Surgeon"
+      links: 
+      - '<a href="https://example.com/doc-profile">View Facility</a>'
+      - '<a href="https://example.com/doc-profile">Read Reviews</a>'
+
   - categories: cat-ri cat-mod
     imageFolder: ba-14
     altText: Removal / Replacement of implant
@@ -248,6 +385,17 @@ galleryItem:
     - Inframammary
     - 'Implant Type#: n/a'
     details: Patient desired larger size implants
+    procedure:
+    - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
+    - '<a href="https://example.com/breast-implants">Breast Implants</a>'
+    docProfile:
+      name: "Dr. Michael Horn M.D."
+      rating: 5
+      text: "Experienced and Board Certified Nashville Plastic Surgeon"
+      links: 
+      - '<a href="https://example.com/doc-profile">View Facility</a>'
+      - '<a href="https://example.com/doc-profile">Read Reviews</a>'
+      
   - categories: cat-al cat-mod
     imageFolder: ba-15
     altText: Breast Augmentation with Lift
@@ -1062,6 +1210,17 @@ galleryItem:
     - Inframammary
     - 'Implant Type#: n/a'
     details: Breast Augmentation with Silicone Implants
+    procedure:
+    - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
+    - '<a href="https://example.com/breast-implants">Breast Implants</a>'
+    docProfile:
+      name: "Dr. Michael Horn M.D."
+      rating: 5
+      text: "Experienced and Board Certified Nashville Plastic Surgeon"
+      links: 
+      - '<a href="https://example.com/doc-profile">View Facility</a>'
+      - '<a href="https://example.com/doc-profile">Read Reviews</a>'
+
   - categories: cat-al cat-mod
     imageFolder: ba-76
     altText: Breast aug with vertical breast lift
@@ -1076,3 +1235,13 @@ galleryItem:
     - Inframammary
     - smooth resp. silicone
     details: Patient desired a more youthful appearance of her breasts following pregnancy
+    procedure:
+    - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
+    - '<a href="https://example.com/breast-implants">Breast Implants</a>'
+    docProfile:
+      name: "Dr. Michael Horn M.D."
+      rating: 5
+      text: "Experienced and Board Certified Nashville Plastic Surgeon"
+      links: 
+      - '<a href="https://example.com/doc-profile">View Facility</a>'
+      - '<a href="https://example.com/doc-profile">Read Reviews</a>'
