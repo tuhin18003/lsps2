@@ -8,4 +8,5 @@ type: "breastCategory"
 catName : "Profile Type Extra Full"
 catSlug : "cat-xful"
 weight: 9
+draft: true
 ---

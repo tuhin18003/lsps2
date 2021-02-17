@@ -8,4 +8,5 @@ type: "breastCategory"
 catName : "Profile Type Moderate"
 catSlug : "cat-mod"
 weight: 7
+draft: true
 ---

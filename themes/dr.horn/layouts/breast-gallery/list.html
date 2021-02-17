@@ -100,8 +100,9 @@
 											<div class="col-lg-12 sum">
 												<div class="row">
 													<div class="col-lg-12">
-														<p> Age: {{ $age }}<br/> Gender: Female<br/> 
-															{{ $details }}
+														<p class="text-center"> {{ with $age }} Age: {{ $age }} <br/> {{ end }}
+															Profile: {{  index $binfo 1 }}<br/> 
+															Implant Type: {{  index $ainfo 3 }} 
 														</p>
 													</div>
 													<div class="col-sm-12"> 

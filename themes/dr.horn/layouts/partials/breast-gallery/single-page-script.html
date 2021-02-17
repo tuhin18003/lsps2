@@ -18,20 +18,41 @@
             {{ range $imgNum, $elem :=  $images }}
                 {{ if .IsDir }}
 
-                    {{ $morePicPath := printf "%s/%s" $path "more_pic" }}
-                    {{ $moreImages := readDir $morePicPath }}
+                    {{ $frontPicPath := printf "%s/%s" $path "Front" }}
+                    
+                    {{ if $frontPicPath }}
 
-                    {{ $pn | urlize }} : [ 
+                    {{ $frontMoreImages := readDir $frontPicPath }}
 
-                    {{ range $mImgNum, $mElem :=  $moreImages }}
+                    {{ $obliquePicPath := printf "%s/%s" $path "Oblique" }}
+                    {{ $obliqueMoreImages := readDir $obliquePicPath }}
 
-                        {{ $imgUrl :=  printf "%s/%s/%s/%s" $absPath $pn "more_pic" .Name | absURL }}
+                    {{ $sidePicPath := printf "%s/%s" $path "Side" }}
+                    {{ $sideMoreImages := readDir $sidePicPath }}
 
-                        {{ $imgUrl }},
+                    {{ $pn | urlize }} : { 
+                        "front" : [ 
+                            {{ range $mImgNum, $mElem :=  $frontMoreImages }}
+                                {{ $imgUrl :=  printf "%s/%s/%s/%s" $absPath $pn "Front" .Name | absURL }}
+                                {{ $imgUrl }},
+                            {{end }}
+                        ],
+                        "oblique" : [ 
+                            {{ range $mImgNum, $mElem :=  $obliqueMoreImages }}
+                                {{ $imgUrl :=  printf "%s/%s/%s/%s" $absPath $pn "Oblique" .Name | absURL }}
+                                {{ $imgUrl }},
+                            {{end }}
+                        ],
+                        "side" : [ 
+                            {{ range $mImgNum, $mElem :=  $sideMoreImages }}
+                                {{ $imgUrl :=  printf "%s/%s/%s/%s" $absPath $pn "Side" .Name | absURL }}
+                                {{ $imgUrl }},
+                            {{end }}
+                        ]
 
-                    {{end }}
+                    },
 
-                    ],
+                    {{end }} //end here
 
                 {{ end }}
             {{ end }}

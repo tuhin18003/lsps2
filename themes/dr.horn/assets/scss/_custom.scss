@@ -63,6 +63,12 @@
                 background-color: #f9f9f9;
                 margin-top: 10px;
                 margin-left: -10px;
+
+                & li{ 
+                    &:last-child{
+                        border-bottom: 0px !important;
+                    }
+                }
             }
         }
     }
@@ -158,6 +164,10 @@
                         list-style: disc;
                     }
                 }
+
+                .cs-doc-review{
+                    font-style: italic;
+                }
             }
 
             .info-col{
@@ -182,8 +192,19 @@
             margin-bottom: 30px;
             color: #444!important;
 
+            & .cs_more_pic_title{
+                background: #a8d0bd;
+                padding: 5px 15px;
+            }
+
             & .single-item-gallery{
                 padding: 16px;
+
+                & h5{
+                    border-bottom: 1px solid #fff;
+                    padding: 10px 0px;
+                    margin-bottom: 20px;
+                }
 
                 & img{
                     border: 2px solid #fff;

@@ -44,13 +44,13 @@ galleryItem:
     binfo:
     - 'Patient#: n/a'
     - Moderate Profile
-    - 'Height#: n/a'
-    - 'Weight#: n/a'
+    - 'n/a'
+    - 'n/a'
     ainfo:
     - 371cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: "Breast Augmentation with Silicone Implants"
     procedure:
     - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
@@ -77,7 +77,7 @@ galleryItem:
     - 304cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
     procedure:
     - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
@@ -96,14 +96,14 @@ galleryItem:
     altText: Breast aug | Breast Lift
     binfo:
     - 'Patient#: 200'
-    - 'Profile#: n/a'
+    - 'n/a'
     - 5'8
     - 125 lbs
     ainfo:
     - 'Implant Size#: n/a'
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Anchor Breast Lift
     procedure:
     - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
@@ -128,7 +128,7 @@ galleryItem:
     - 375cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation
     procedure:
     - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
@@ -153,7 +153,7 @@ galleryItem:
     - 304cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Anchor Breast Lift
     procedure:
     - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
@@ -173,13 +173,13 @@ galleryItem:
     binfo:
     - 'Patient#: n/a'
     - Moderate Profile
-    - 'Height#: n/a'
-    - 'Weight#: n/a'
+    - 'n/a'
+    - 'n/a'
     ainfo:
     - 339cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
     procedure:
     - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
@@ -204,7 +204,7 @@ galleryItem:
     - 485cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
     procedure:
     - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
@@ -224,13 +224,13 @@ galleryItem:
     binfo:
     - 'Patient#: n/a'
     - Moderate Profile
-    - 'Height#: n/a'
-    - 'Weight#: n/a'
+    - 'n/a'
+    - 'n/a'
     ainfo:
     - 371cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
     procedure:
     - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
@@ -249,14 +249,14 @@ galleryItem:
     altText: Breast Reduction
     binfo:
     - 'Patient#: n/a'
-    - 'Profile#: n/a'
+    - 'n/a'
     - 5"4
     - 130 lbs
     ainfo:
     - 'Implant Size#: n/a'
     - 'Placement#: n/a'
     - Inferior Pedicle
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Reduction
     procedure:
     - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
@@ -282,7 +282,7 @@ galleryItem:
     - 339cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
     procedure:
     - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
@@ -308,7 +308,7 @@ galleryItem:
     - '400cc & 430cc '
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Saline Implants
     procedure:
     - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
@@ -326,14 +326,14 @@ galleryItem:
     altText: Breast Lift
     binfo:
     - 'Patient#: n/a'
-    - 'Profile#: n/a'
+    - 'n/a'
     - 5"9
     - 194 lbs
     ainfo:
     - 'Implant Size#: n/a'
     - 'Placement#: n/a'
     - Undetermined
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Anchor Breast Lift
     procedure:
     - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
@@ -358,7 +358,7 @@ galleryItem:
     - 371cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
     procedure:
     - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
@@ -383,7 +383,7 @@ galleryItem:
     - R-485cc, L-520cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Patient desired larger size implants
     procedure:
     - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'
@@ -408,7 +408,7 @@ galleryItem:
     - 304cc
     - 'Placement#: n/a'
     - Peri-Areolar
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Peri-Areolar Lift
   - categories: cat-a cat-mod
     imageFolder: ba-16
@@ -436,7 +436,7 @@ galleryItem:
     - 339cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-mod
     imageFolder: ba-18
@@ -444,13 +444,13 @@ galleryItem:
     binfo:
     - 'Patient#: n/a'
     - Moderate Profile
-    - 'Height#: n/a'
-    - 'Weight#: n/a'
+    - 'n/a'
+    - 'n/a'
     ainfo:
     - 421cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-mod
     imageFolder: ba-19
@@ -478,7 +478,7 @@ galleryItem:
     - 550 & 600
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-ful
     imageFolder: ba-21
@@ -492,7 +492,7 @@ galleryItem:
     - 425 & 450
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-ful
     imageFolder: ba-23
@@ -514,13 +514,13 @@ galleryItem:
     binfo:
     - 'Patient#: n/a'
     - Full Profile
-    - 'Height#: n/a'
-    - 'Weight#: n/a'
+    - 'n/a'
+    - 'n/a'
     ainfo:
     - 425cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-mod
     imageFolder: ba-26
@@ -534,7 +534,7 @@ galleryItem:
     - 286cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-mod
     imageFolder: ba-27
@@ -542,13 +542,13 @@ galleryItem:
     binfo:
     - 'Patient#: n/a'
     - Moderate Profile
-    - 'Height#: n/a'
-    - 'Weight#: n/a'
+    - 'n/a'
+    - 'n/a'
     ainfo:
     - 421cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-ful
     imageFolder: ba-28
@@ -562,7 +562,7 @@ galleryItem:
     - 485cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-mod
     imageFolder: ba-29
@@ -570,13 +570,13 @@ galleryItem:
     binfo:
     - 'Patient#: n/a'
     - Moderate Profile
-    - 'Height#: n/a'
-    - 'Weight#: n/a'
+    - 'n/a'
+    - 'n/a'
     ainfo:
     - 371cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-ful
     imageFolder: ba-30
@@ -619,7 +619,7 @@ galleryItem:
     - 300cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-mod
     imageFolder: ba-33
@@ -633,7 +633,7 @@ galleryItem:
     - 397cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-mod
     imageFolder: ba-34
@@ -647,7 +647,7 @@ galleryItem:
     - 300cc & 350cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-mod
     imageFolder: ba-35
@@ -683,13 +683,13 @@ galleryItem:
     binfo:
     - 'Patient#: n/a'
     - Moderate Profile
-    - 'Height#: n/a'
-    - 'Weight#: n/a'
+    - 'n/a'
+    - 'n/a'
     ainfo:
     - 457cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-mod
     imageFolder: ba-38
@@ -703,7 +703,7 @@ galleryItem:
     - 360cc
     - Submuscular
     - Axillary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Saline Implants
   - categories: cat-a cat-ful
     imageFolder: ba-39
@@ -717,7 +717,7 @@ galleryItem:
     - 450cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-mod
     imageFolder: ba-40
@@ -725,13 +725,13 @@ galleryItem:
     binfo:
     - 'Patient#: n/a'
     - Moderate Profile
-    - 'Height#: n/a'
-    - 'Weight#: n/a'
+    - 'n/a'
+    - 'n/a'
     ainfo:
     - 339cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-xful
     imageFolder: ba-41
@@ -753,13 +753,13 @@ galleryItem:
     binfo:
     - 'Patient#: n/a'
     - Full Profile
-    - 'Height#: n/a'
-    - 'Weight#: n/a'
+    - 'n/a'
+    - 'n/a'
     ainfo:
     - 425cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Saline Implants
   - categories: cat-a cat-ful
     imageFolder: ba-43
@@ -773,7 +773,7 @@ galleryItem:
     - 400cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-ful
     imageFolder: ba-44
@@ -787,7 +787,7 @@ galleryItem:
     - '390cc & 420cc '
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Saline Implants
   - categories: cat-a cat-xful
     imageFolder: ba-45
@@ -801,7 +801,7 @@ galleryItem:
     - 470cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-ful
     imageFolder: ba-46
@@ -809,13 +809,13 @@ galleryItem:
     binfo:
     - 'Patient#: n/a'
     - Full Profile
-    - 'Height#: n/a'
-    - 'Weight#: n/a'
+    - 'n/a'
+    - 'n/a'
     ainfo:
     - 425cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-mod
     imageFolder: ba-47
@@ -823,13 +823,13 @@ galleryItem:
     binfo:
     - 'Patient#: n/a'
     - Moderate Profile
-    - 'Height#: n/a'
-    - 'Weight#: n/a'
+    - 'n/a'
+    - 'n/a'
     ainfo:
     - 421cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-ful
     imageFolder: ba-48
@@ -843,7 +843,7 @@ galleryItem:
     - 400cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-mod
     imageFolder: ba-49
@@ -857,21 +857,21 @@ galleryItem:
     - 371cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-l 
     imageFolder: ba-51
     altText: Breast Lift
     binfo:
     - 'Patient#: n/a'
-    - 'Profile#: n/a'
-    - 'Height#: n/a'
-    - 'Weight#: n/a'
+    - 'n/a'
+    - 'n/a'
+    - 'n/a'
     ainfo:
     - 'Implant Size#: n/a'
     - 'Placement#: n/a'
     - Undetermined
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Anchor Breast Lift
     review : [ "Natasha", 5, "patient review, patient review patient review patient review" ] #patient name, review rating, review
   - categories: cat-a cat-ful
@@ -880,13 +880,13 @@ galleryItem:
     binfo:
     - 'Patient#: n/a'
     - Full Profile
-    - 'Height#: n/a'
-    - 'Weight#: n/a'
+    - 'n/a'
+    - 'n/a'
     ainfo:
     - 350cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-low
     imageFolder: ba-53
@@ -900,7 +900,7 @@ galleryItem:
     - 330cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-mod
     imageFolder: ba-54
@@ -914,7 +914,7 @@ galleryItem:
     - 339cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-ful
     imageFolder: ba-55
@@ -928,7 +928,7 @@ galleryItem:
     - 450 & 475
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-mod
     imageFolder: ba-56
@@ -942,7 +942,7 @@ galleryItem:
     - 304cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-mod
     imageFolder: ba-57
@@ -950,13 +950,13 @@ galleryItem:
     binfo:
     - 'Patient#: n/a'
     - Moderate Profile
-    - 'Height#: n/a'
-    - 'Weight#: n/a'
+    - 'n/a'
+    - 'n/a'
     ainfo:
     - 371cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-ful
     imageFolder: ba-58
@@ -970,7 +970,7 @@ galleryItem:
     - 450cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-mod
     imageFolder: ba-59
@@ -998,21 +998,21 @@ galleryItem:
     - 485cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-r
     imageFolder: ba-61
     altText: Breast Reduction
     binfo:
     - 'Patient#: n/a'
-    - 'Profile#: n/a'
+    - 'n/a'
     - 5"0
     - 133 lbs
     ainfo:
     - 'Implant Size#: n/a'
     - 'Placement#: n/a'
     - Inferior Pedicle
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Reduction
   - categories: cat-a cat-xful
     imageFolder: ba-62
@@ -1026,7 +1026,7 @@ galleryItem:
     - 500cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-mod
     imageFolder: ba-63
@@ -1040,7 +1040,7 @@ galleryItem:
     - 339 & 371
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-mod
     imageFolder: ba-64
@@ -1054,7 +1054,7 @@ galleryItem:
     - 330cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Saline Implants
   - categories: cat-a cat-ful
     imageFolder: ba-65
@@ -1068,7 +1068,7 @@ galleryItem:
     - 400cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-ful
     imageFolder: ba-66
@@ -1082,7 +1082,7 @@ galleryItem:
     - 550cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-mod
     imageFolder: ba-67
@@ -1096,7 +1096,7 @@ galleryItem:
     - 310cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-ful
     imageFolder: ba-68
@@ -1110,7 +1110,7 @@ galleryItem:
     - 400cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-mod
     imageFolder: ba-69
@@ -1118,13 +1118,13 @@ galleryItem:
     binfo:
     - 'Patient#: n/a'
     - Moderate Profile
-    - 'Height#: n/a'
-    - 'Weight#: n/a'
+    - 'n/a'
+    - 'n/a'
     ainfo:
     - 339cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-mod
     imageFolder: ba-70
@@ -1132,13 +1132,13 @@ galleryItem:
     binfo:
     - 'Patient#: n/a'
     - Moderate Profile
-    - 'Height#: n/a'
-    - 'Weight#: n/a'
+    - 'n/a'
+    - 'n/a'
     ainfo:
     - 304cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-ful
     imageFolder: ba-71
@@ -1152,7 +1152,7 @@ galleryItem:
     - 450 & 475
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-xful
     imageFolder: ba-72
@@ -1166,7 +1166,7 @@ galleryItem:
     - 500cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-ful
     imageFolder: ba-73
@@ -1174,13 +1174,13 @@ galleryItem:
     binfo:
     - 'Patient#: n/a'
     - Full Profile
-    - 'Height#: n/a'
-    - 'Weight#: n/a'
+    - 'n/a'
+    - 'n/a'
     ainfo:
     - 400cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-mod
     imageFolder: ba-74
@@ -1194,7 +1194,7 @@ galleryItem:
     - 339cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
   - categories: cat-a cat-low
     imageFolder: ba-75
@@ -1202,13 +1202,13 @@ galleryItem:
     binfo:
     - 'Patient#: n/a'
     - Low Plus Profile
-    - 'Height#: n/a'
-    - 'Weight#: n/a'
+    - 'n/a'
+    - 'n/a'
     ainfo:
     - 265cc
     - Submuscular
     - Inframammary
-    - 'Implant Type#: n/a'
+    - 'n/a'
     details: Breast Augmentation with Silicone Implants
     procedure:
     - '<a href="https://example.com/breast-asymmetry">Breast Asymmetry</a>'

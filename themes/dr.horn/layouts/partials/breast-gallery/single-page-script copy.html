@@ -1,0 +1,55 @@
+{{ if .Params.isBreastGallery }}
+
+<script type="text/javascript">
+
+    var csGalImages = {
+
+    {{ $sPath := .Site.Data.breastGallery.galleryPath.baseFolder }}
+    {{ $absPath := .Site.Data.breastGallery.galleryPath.absPath }}
+    {{ $dirPath := (printf "/%s/%s/" $sPath $absPath ) }}
+    {{ $scratch := newScratch }}
+    {{ range $elem_key, $elem_val := .Site.Data.breastGallery.galleryItem }}
+        {{ $elem_key := add $elem_key 1 }}
+
+        {{ if .imageFolder }}
+            {{ $pn := .imageFolder }}
+            {{ $path := printf "%s%s" $dirPath $pn }}
+            {{ $images := readDir $path }}
+            {{ range $imgNum, $elem :=  $images }}
+                {{ if .IsDir }}
+
+                    {{ $frontPicPath := printf "%s/%s" $path "Front" }}
+                    {{ $frontMoreImages := readDir $frontPicPath }}
+
+                    {{ if $frontMoreImages }}
+                        {{ $frontMoreImages }}
+                    {{ end }}
+
+                    {{ $pn | urlize }} : [ 
+                        "front" : [ 
+                            {{ if $frontMoreImages }}
+                                {{ range $mImgNum, $mElem :=  $frontMoreImages }}
+                                    {{ $imgUrl :=  printf "%s/%s/%s/%s" $absPath $pn "Front" .Name | absURL }}
+                                    {{ $imgUrl }},
+                                {{end }}
+                            {{end }}
+                        ]
+
+                    ],
+
+
+                {{ end }}
+            {{ end }}
+        {{ end }}
+        
+    {{ end }}
+
+};
+
+</script>
+
+<!-- 'ba-1' : [ 'abraham1.jpg', 'abraham2.jpg' ] -->
+
+<script defer async type="text/javascript" src="{{ "/assets/js/breast-gallery.min.js" | absURL }}"></script>
+
+{{ end }}

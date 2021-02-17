@@ -30,6 +30,8 @@
 						{{ $itemTitle := .itemTitle }}
 						{{ $details := .details }}
 						{{ $age := .age }}
+						{{ $binfo := .binfo }}
+						{{ $ainfo := .ainfo }}
 
 						{{ if .imageFolder }}
 						{{ $pn := .imageFolder }}
@@ -65,8 +67,8 @@
 												<div class="row">
 													<div class="col-sm-12 text-center">
 														<p class="text-center"> {{ with $age }} Age: {{ $age }} <br/> {{ end }}
-															Gender: Female<br/> 
-															{{ substr $details 0 30 }} ...
+															Profile: {{  index $binfo 1 }}<br/> 
+															Implant Type: {{  index $ainfo 3 }} 
 														</p>
 													</div>
 													<div class="col-sm-12"> 

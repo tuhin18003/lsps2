@@ -8,4 +8,5 @@ type: "breastCategory"
 catName : "Profile Type Low"
 catSlug : "cat-low"
 weight: 6
+draft: true
 ---
