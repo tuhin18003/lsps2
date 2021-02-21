@@ -143,7 +143,7 @@ $(document).ready(function(){
                     });
 
                     var pID = typeof e.binfo !== 'undefined' ? e.binfo[ 0 ] : '--';
-                    $(".cs_more_pic_title").html( catName + ' Gallery ( Patient ID# ' + pID + ')' );
+                    $(".cs_more_pic_title").html( catName + ' ' + pID  );
 
                     var keys = Object.keys(csGalImages);
                     var lastKey = keys[keys.length - 1];
